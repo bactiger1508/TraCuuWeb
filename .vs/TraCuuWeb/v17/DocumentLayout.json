@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\tracuuweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\tracuuweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\data\\tracuugoicuoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\data\\tracuugoicuoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:24:40.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:24:23.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:13:39.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T03:13:38.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Program.cs",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Program.cs",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Program.cs",
+              "RelativeToolTip": "TraCuuWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:50:03.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TraCuuGoiCuocContext.cs",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
+              "RelativeToolTip": "TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:48:39.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "TraCuuWeb\\appsettings.json",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\appsettings.json",
+              "RelativeToolTip": "TraCuuWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-18T02:46:37.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TraCuuWeb.csproj",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\TraCuuWeb.csproj",
+              "RelativeDocumentMoniker": "TraCuuWeb\\TraCuuWeb.csproj",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\TraCuuWeb.csproj",
+              "RelativeToolTip": "TraCuuWeb\\TraCuuWeb.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-18T02:45:44.991Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
