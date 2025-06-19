@@ -37,6 +37,12 @@ namespace TraCuuWeb.Controllers
                 .Take(pageSize)
                 .ToList();
 
+            // Fact section data
+            ViewBag.Fact_KhachHang = _context.Users.Count();
+            ViewBag.Fact_SanPhamHienCo = _context.GoiCuocs.Count();
+            ViewBag.Fact_SanPhamDaBan = _context.LichSuDangKies.Count();
+            ViewBag.Fact_LuotTruyCap = _context.LichSuDangNhaps.Count();
+
             ViewBag.NhomLons = nhomLons;
             ViewBag.CurrentCategory = categoryId ?? 0;
             ViewBag.CurrentPage = page;

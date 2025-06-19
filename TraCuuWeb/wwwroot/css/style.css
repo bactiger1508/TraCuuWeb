@@ -156,9 +156,14 @@
     }
 }
 
-.dropdown .dropdown-menu a:hover {
-    background: var(--bs-secondary);
-    color: var(--bs-primary);
+/* Force dropdown menu hover: chữ trắng trên nền xanh */
+.dropdown .dropdown-menu a:hover, .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item.active {
+    background: #0072CE !important;
+    color: #fff !important;
+}
+.dropdown .dropdown-menu a:hover *, .dropdown-menu .dropdown-item:hover *, .dropdown-menu .dropdown-item:focus *, .dropdown-menu .dropdown-item.active * {
+    color: #fff !important;
+    fill: #fff !important;
 }
 
 .navbar .nav-item:hover .dropdown-menu {
@@ -248,16 +253,13 @@
 }
 
 .featurs .featurs-item .featurs-icon::after {
-    content: "";
-    width: 35px;
-    height: 35px;
-    background: var(--bs-secondary);
-    position: absolute;
-    bottom: -10px;
-    transform: translate(-50%);
-    transform: rotate(45deg);
-    background: var(--bs-secondary);
-    
+    display: none !important;
+    content: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: none !important;
+    border: none !important;
+    position: static !important;
 }
 /*** featurs End ***/
 

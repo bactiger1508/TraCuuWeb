@@ -3,6 +3,7 @@ wwwroot\cart.html
 wwwroot\chackout.html
 wwwroot\contact.html
 wwwroot\css\bootstrap.min.css
+wwwroot\css\custom.css
 wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\favicon.ico
@@ -28,10 +29,12 @@ wwwroot\img\fruite-item-6.jpg
 wwwroot\img\hero-img-1.png
 wwwroot\img\hero-img-2.jpg
 wwwroot\img\hero-img.jpg
+wwwroot\img\logoVNPT.png
 wwwroot\img\payment.png
 wwwroot\img\poster1.jpg
 wwwroot\img\poster2.jpg
 wwwroot\img\poster3.jpg
+wwwroot\img\poster4.jpg
 wwwroot\img\single-item.jpg
 wwwroot\img\testimonial-1.jpg
 wwwroot\img\vegetable-item-1.jpg

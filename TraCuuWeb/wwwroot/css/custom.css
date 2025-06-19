@@ -1,0 +1,559 @@
+/* Custom CSS để override màu primary Bootstrap */
+:root {
+    --bs-primary: #0072CE !important;
+    --bs-primary-rgb: 0, 114, 206 !important;
+}
+
+/* Override các class Bootstrap sử dụng màu primary */
+.btn-primary {
+    color: #000 !important;
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+}
+
+.btn-primary:hover {
+    color: #000 !important;
+    background-color: #198ed6 !important;
+    border-color: #198ed6 !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #000 !important;
+    background-color: #198ed6 !important;
+    border-color: #198ed6 !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.5) !important;
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+    color: #000 !important;
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+}
+
+.btn-outline-primary {
+    color: #0072CE !important;
+    border-color: #0072CE !important;
+}
+
+.btn-outline-primary:hover {
+    color: #000 !important;
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.5) !important;
+}
+
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+    color: #0072CE !important;
+    background-color: transparent !important;
+}
+
+.btn-link {
+    color: #0072CE !important;
+}
+
+.btn-link:hover {
+    color: #198ed6 !important;
+}
+
+/* Form controls */
+.form-check-input:checked {
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+}
+
+.form-check-input:indeterminate {
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #0072CE !important;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: #0072CE !important;
+}
+
+/* Links */
+a {
+    color: #212529 !important;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0072CE !important;
+}
+
+.link-primary {
+    color: #0072CE !important;
+}
+
+.link-primary:hover,
+.link-primary:focus {
+    color: #198ed6 !important;
+}
+
+/* Navigation */
+/* .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff !important;
+    background-color: #0072CE !important;
+} */
+
+/* Pagination */
+/* .page-link {
+    color: #212529 !important;
+    transition: color 0.3s;
+}
+
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+} */
+
+/* Progress bars */
+.progress-bar {
+    background-color: #0072CE !important;
+}
+
+/* List groups */
+.list-group-item.active {
+    color: #fff !important;
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+}
+
+/* Dropdown */
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff !important;
+    background-color: #0072CE !important;
+}
+
+/* Text and background utilities */
+.text-primary {
+    color: #0072CE !important;
+}
+
+.bg-primary {
+    background-color: #0072CE !important;
+}
+
+.border-primary {
+    border-color: #0072CE !important;
+}
+
+/* Focus states */
+.form-control:focus,
+.form-select:focus {
+    border-color: #0072CE !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.25) !important;
+}
+
+/* Custom hover effects cho navbar */
+/* .navbar .navbar-nav .nav-link {
+    color: #212529 !important;
+    transition: color 0.3s;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #0072CE !important;
+} */
+
+/* Custom hover effects cho topbar */
+.topbar .top-link a small:hover i {
+    color: #0072CE !important;
+}
+
+/* Custom hover effects cho dropdown */
+.dropdown .dropdown-menu a:hover {
+    color: #0072CE !important;
+}
+
+/* Custom hover effects cho pagination */
+/* .pagination .page-link,
+.pagination a {
+    color: #212529 !important;
+    transition: color 0.3s;
+}
+.pagination .page-link:hover,
+.pagination a:hover,
+.pagination .page-link.active,
+.pagination a.active {
+    color: #fff !important;
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+} */
+
+/* Custom hover effects cho nav tabs */
+.nav.nav-tabs .nav-link.active {
+    color: #0072CE !important;
+}
+
+/* Custom hover effects cho footer */
+.footer .footer-item .btn-link:hover {
+    color: #0072CE !important;
+}
+
+/* --- Đảm bảo các icon mạng xã hội trong footer vẫn giữ màu trắng mờ --- */
+.footer a.text-white-50 {
+    color: #fff !important;
+    opacity: 0.5;
+}
+.footer a.text-white-50:hover {
+    color: #0072CE !important;
+    opacity: 1;
+}
+
+/* --- PHÂN TRANG: Hover thành chữ trắng --- */
+/* .pagination .page-link:hover,
+.pagination a:hover {
+    color: #fff !important;
+    background-color: #0072CE !important;
+    border-color: #0072CE !important;
+} */
+
+/* --- BUTTON CATEGORIES: nền trắng, chữ đen, viền xanh. Hover/active: nền xanh, chữ trắng, viền trắng --- */
+.btn-category, .btn-outline-primary {
+    color: #212529 !important;
+    background-color: #fff !important;
+    border: 1.5px solid #0072CE !important;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn-category:hover, .btn-outline-primary:hover,
+.btn-category.active, .btn-outline-primary.active {
+    color: #fff !important;
+    background-color: #0072CE !important;
+    border: 1.5px solid #fff !important;
+}
+
+/* Đảm bảo nút active cũng đúng style */
+.btn-category.active,
+.btn-outline-primary.active {
+    color: #fff !important;
+    background-color: #0072CE !important;
+    border: 1.5px solid #0072CE !important;
+}
+
+/* --- FOOTER LAYOUT --- */
+.footer {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+.footer .container {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+}
+.footer .row > div {
+    margin-bottom: 24px;
+}
+.footer h5, .footer h4, .footer h3 {
+    margin-bottom: 18px !important;
+}
+.footer p, .footer ul, .footer li, .footer div, .footer span {
+    line-height: 2.2 !important;
+}
+.footer .d-flex.gap-3 {
+    justify-content: center;
+    gap: 28px !important;
+    margin-top: 10px;
+}
+@media (max-width: 991px) {
+    .footer .container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    .footer .d-flex.gap-3 {
+        justify-content: flex-start;
+    }
+}
+
+/* Hiệu ứng bóng đổ và zoom ảnh cho card gói cước */
+.goicuoc-equal-box {
+    transition: box-shadow 0.5s, transform 0.5s;
+    border: 2px solid #0072CE !important;
+}
+.goicuoc-equal-box:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px) scale(1.03);
+    z-index: 2;
+}
+.goicuoc-equal-box .fruite-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+.goicuoc-equal-box .fruite-img img {
+    transition: transform 0.5s;
+}
+.goicuoc-equal-box:hover .fruite-img img {
+    transform: scale(1.13);
+}
+
+/* Tag nhóm lớn (ví dụ: .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute) màu xanh VNPT mới */
+.goicuoc-equal-box .position-absolute,
+.fruite-item .position-absolute {
+    background: #fff !important;
+    color: #0072CE !important;
+    border: 1.5px solid #0072CE !important;
+    font-weight: bold;
+}
+
+/* Nút tìm kiếm màu xanh #0dcaf0 */
+.btn-search,
+.btn-search:focus,
+.btn-search:active,
+.btn-search:hover,
+.position-relative.w-100 button[type="submit"] {
+    background-color: #0072CE !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+/* Input tìm kiếm và text mặc định màu đen */
+input[type="text"],
+input[type="search"],
+.form-control,
+select,
+textarea {
+    color: #212529 !important;
+}
+
+body, .container, .row, .col, .col-*, .form-label, .form-check-label, .form-select, .form-control, .btn, .nav-link, .page-link, .list-group-item, .dropdown-item, .footer, .footer * {
+    color: #212529 !important;
+}
+
+/* Loại trừ các tiêu đề lớn */
+h1, h2, h3, .section-title, .fw-bold, .display-6, .display-5, .display-4, .display-3, .display-2, .display-1 {
+    color: inherit !important;
+}
+
+/* Button mặc định nền xanh, chữ trắng; hover nền trắng, viền xanh, chữ xanh VNPT mới */
+.btn, .btn-primary, .btn-success, .btn-info, .btn-search, .position-relative.w-100 button[type="submit"] {
+    background-color: #0072CE !important;
+    color: #fff !important;
+    border: 1.5px solid #0072CE !important;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.btn:hover, .btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-search:hover, .position-relative.w-100 button[type="submit"]:hover {
+    background-color: #fff !important;
+    color: #0072CE !important;
+    border: 1.5px solid #0072CE !important;
+}
+
+/* Icon hero section: icon trắng, nền xanh */
+.featurs .featurs-icon {
+    background: #0072CE !important;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 18px auto;
+}
+.featurs .featurs-icon i {
+    color: #fff !important;
+    font-size: 2.5rem;
+}
+
+/* Nút trong box sản phẩm và nút category: nền trắng, viền xanh, chữ xanh, hover nền xanh chữ trắng */
+.btn, .btn-primary, .btn-success, .btn-info, .btn-search, .position-relative.w-100 button[type="submit"],
+.btn-outline-primary, .btn-category, .btn-outline-warning, .pagination .page-link, .pagination a, .nav-pills .nav-link, .nav-link, .category-btn {
+    background-color: #fff !important;
+    color: #0072CE !important;
+    border: 1.5px solid #0072CE !important;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.btn:hover, .btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-search:hover, .position-relative.w-100 button[type="submit"]:hover,
+.btn-outline-primary:hover, .btn-category:hover, .btn-outline-warning:hover, .pagination .page-link:hover, .pagination a:hover, .nav-pills .nav-link:hover, .nav-link:hover, .category-btn:hover,
+.btn.active, .btn-primary.active, .btn-success.active, .btn-info.active, .btn-search.active, .btn-outline-primary.active, .btn-category.active, .btn-outline-warning.active, .category-btn.active {
+    background-color: #0072CE !important;
+    color: #fff !important;
+    border: 1.5px solid #0072CE !important;
+}
+
+/* Viền box sản phẩm màu xanh VNPT mới */
+.goicuoc-equal-box {
+    border: 2px solid #0072CE !important;
+}
+
+/* Tag nhóm lớn (ví dụ: .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute) màu xanh VNPT mới */
+.goicuoc-equal-box .position-absolute,
+.fruite-item .position-absolute {
+    background: #fff !important;
+    color: #0072CE !important;
+    border: 1.5px solid #0072CE !important;
+    font-weight: bold;
+}
+.goicuoc-equal-box .position-absolute,
+.fruite-item .position-absolute {
+    background: #fff !important;
+    color: #0072CE !important;
+    border: 1.5px solid #0072CE !important;
+    font-weight: bold;
+}
+
+/* Navbar menu: chữ đen, hover/active chữ xanh, không nền, không border */
+.navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:active {
+    color: #212529 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: color 0.2s;
+}
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
+    color: #0072CE !important;
+    background: none !important;
+    border: none !important;
+}
+
+/* Bỏ border phân trang, chỉ border cho trang đang chọn khi hover/active */
+.pagination .page-link, .pagination a {
+    border: none !important;
+    border-radius: 0.5rem !important;
+}
+.pagination .page-item.active .page-link, .pagination .page-link.active, .pagination a.active,
+.pagination .page-link:hover, .pagination a:hover {
+    background-color: #0072CE !important;
+    color: #fff !important;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    box-shadow: 0 2px 8px 0 rgba(0,114,206,0.08);
+}
+
+/* Toàn bộ chữ (trừ tiêu đề lớn) là đen */
+body, p, span, li, .nav-link, .tab-link, .pagination, .btn, a, .card, .form-control, label, th, td, input, select, textarea {
+    color: #212529 !important;
+}
+
+/* Loại trừ tiêu đề lớn */
+h1, h2, h3, h4, h5, h6 {
+    color: inherit !important;
+}
+
+/* Link, nav, tab, pagination, button text mặc định là đen, hover mới xanh */
+a, .nav-link, .tab-link, .pagination a, .btn {
+    color: #212529 !important;
+    transition: color 0.2s;
+}
+a:hover, .nav-link:hover, .tab-link:hover, .pagination a:hover, .btn:hover {
+    color: #fff !important;
+}
+
+/* Tag group-label trong card sản phẩm: chữ đen, nền trắng, viền xanh */
+.card .group-label, .goicuoc-equal-box .group-label, .fruite-item .group-label, .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute {
+    color: #212529 !important;
+    background: #fff !important;
+    border: 1.5px solid #0072CE !important;
+}
+
+/* Footer: chữ xám cho tất cả các cột, giống menu */
+footer, .footer, .footer * {
+    color: #bfc9c2 !important;
+}
+
+/* Footer tiêu đề (h4, strong) vẫn trắng nổi bật */
+footer h4, .footer h4, footer strong, .footer strong {
+    color: #fff !important;
+}
+
+/* Navbar icon: hover thành màu xanh, không phải trắng */
+.navbar .fa, .navbar .fas, .navbar .fa-user, .navbar .fa-shopping-bag {
+    color: #212529 !important;
+    transition: color 0.2s;
+}
+.navbar .fa:hover, .navbar .fas:hover, .navbar .fa-user:hover, .navbar .fa-shopping-bag:hover {
+    color: #0072CE !important;
+}
+
+/* Override warning -> primary */
+.bg-warning, .text-warning, .border-warning, .btn-warning, .btn-outline-warning {
+    background-color: #0072CE !important;
+    color: #fff !important;
+    border-color: #0072CE !important;
+}
+
+.btn-outline-warning {
+    background-color: #fff !important;
+    color: #212529 !important;
+    border-color: #0072CE !important;
+}
+
+.btn-outline-warning:hover, .btn-warning:hover {
+    background-color: #0072CE !important;
+    color: #fff !important;
+    border-color: #0072CE !important;
+}
+
+.text-warning {
+    color: #0072CE !important;
+}
+
+.border-warning {
+    border-color: #0072CE !important;
+}
+
+/* Badge đếm giỏ hàng: nền xanh, chữ trắng */
+.navbar .position-absolute.bg-secondary {
+    background-color: #0072CE !important;
+    color: #fff !important;
+}
+
+/* Border và chữ input tìm kiếm: xanh VNPT */
+input[type="text"], input[type="search"], .form-control {
+    border-color: #0072CE !important;
+    color: #212529 !important;
+}
+
+input[type="text"]::placeholder, input[type="search"]::placeholder, .form-control::placeholder {
+    color: #bfc9c2 !important;
+}
+
+.position-relative.w-100 input[type="text"], .position-relative.w-100 input[type="search"], .position-relative.w-100 .form-control {
+    border: 1.5px solid #0072CE !important;
+}
+
+.position-relative.w-100 input[type="text"]:focus, .position-relative.w-100 input[type="search"]:focus, .position-relative.w-100 .form-control:focus {
+    border-color: #0072CE !important;
+    box-shadow: 0 0 0 0.15rem rgba(0,114,206,0.15) !important;
+}
+
+/* Border cam cho input tìm kiếm */
+.position-relative.w-100 input[type="text"], .position-relative.w-100 input[type="search"], .position-relative.w-100 .form-control {
+    border-color: #0072CE !important;
+}
+
+/* Nút tìm kiếm: nền xanh, chữ trắng */
+.position-relative.w-100 button[type="submit"] {
+    background-color: #0072CE !important;
+    color: #fff !important;
+    border: 1.5px solid #0072CE !important;
+}
+
+/* Button tìm kiếm: hover nền trắng, chữ xanh, viền xanh */
+.position-relative.w-100 button[type="submit"]:hover {
+    background-color: #fff !important;
+    color: #0072CE !important;
+    border: 1.5px solid #0072CE !important;
+}
+
+/* Dropdown menu: hover nền xanh, chữ trắng cho mọi thành phần bên trong */
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item.active {
+    background-color: #0072CE !important;
+    color: #fff !important;
+}
+.dropdown-menu .dropdown-item:hover *,
+.dropdown-menu .dropdown-item:focus *,
+.dropdown-menu .dropdown-item.active * {
+    color: #fff !important;
+    fill: #fff !important;
+} 
