@@ -1,0 +1,53 @@
+@model TraCuuWeb.Data.GoiCuoc
+@{
+    ViewData["Title"] = Model.TenGoi;
+    string tenNhomLon = "";
+    if (Model.IdNhomDiDongNavigation != null && Model.IdNhomDiDongNavigation.IdNhomLonNavigation != null)
+    {
+        tenNhomLon = Model.IdNhomDiDongNavigation.IdNhomLonNavigation.TenNhomLon;
+    }
+    else if (Model.IdNhomBangRongNavigation != null && Model.IdNhomBangRongNavigation.IdNhomLonNavigation != null)
+    {
+        tenNhomLon = Model.IdNhomBangRongNavigation.IdNhomLonNavigation.TenNhomLon;
+    }
+    else
+    {
+        tenNhomLon = "Gói cước mới";
+    }
+    if (tenNhomLon.StartsWith("Gói "))
+    {
+        tenNhomLon = tenNhomLon.Substring(4);
+    }
+}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+            <div class="card shadow-lg border-primary rounded-lg">
+                <div class="card-img-top text-center bg-light p-3 rounded-top">
+                    <img src="@(string.IsNullOrEmpty(Model.HinhAnh) ? Url.Content("~/img/fruite-item-1.jpg") : Model.HinhAnh)" alt="@Model.TenGoi" class="img-fluid rounded" style="max-height:220px;object-fit:cover;">
+                </div>
+                <div class="card-body text-center">
+                    <span class="badge bg-primary mb-2 px-3 py-2 fs-6">@tenNhomLon</span>
+                    <h2 class="mb-3" style="color:#0072CE;font-family:'Montserrat','Segoe UI',Arial,sans-serif;font-weight:700;">@Model.TenGoi</h2>
+                    <div class="mb-3 text-secondary" style="white-space:pre-line;font-size:1.1rem;">@Model.NoiDung</div>
+                    <div class="mb-3">
+                        <span class="fs-3 fw-bold text-dark">
+                            @if (Model.GiaCuocs.Any())
+                            {
+                                @(Model.GiaCuocs.First().Gia + " VNĐ")
+                            }
+                            else
+                            {
+                                <span>Liên hệ</span>
+                            }
+                        </span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg rounded-pill px-5">Đăng ký</a>
+                </div>
+                <div class="card-footer bg-white border-0 text-center">
+                    <a href="@Url.Action("Index", "Shop")" class="btn btn-link">&laquo; Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
