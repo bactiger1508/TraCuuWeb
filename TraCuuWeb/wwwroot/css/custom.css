@@ -100,25 +100,6 @@ a:hover {
     color: #198ed6 !important;
 }
 
-/* Navigation */
-/* .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-    color: #fff !important;
-    background-color: #0072CE !important;
-} */
-
-/* Pagination */
-/* .page-link {
-    color: #212529 !important;
-    transition: color 0.3s;
-}
-
-.page-item.active .page-link {
-    color: #fff !important;
-    background-color: #0072CE !important;
-    border-color: #0072CE !important;
-} */
-
 /* Progress bars */
 .progress-bar {
     background-color: #0072CE !important;
@@ -158,16 +139,6 @@ a:hover {
     box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.25) !important;
 }
 
-/* Custom hover effects cho navbar */
-/* .navbar .navbar-nav .nav-link {
-    color: #212529 !important;
-    transition: color 0.3s;
-}
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: #0072CE !important;
-} */
-
 /* Custom hover effects cho topbar */
 .topbar .top-link a small:hover i {
     color: #0072CE !important;
@@ -178,20 +149,6 @@ a:hover {
     color: #0072CE !important;
 }
 
-/* Custom hover effects cho pagination */
-/* .pagination .page-link,
-.pagination a {
-    color: #212529 !important;
-    transition: color 0.3s;
-}
-.pagination .page-link:hover,
-.pagination a:hover,
-.pagination .page-link.active,
-.pagination a.active {
-    color: #fff !important;
-    background-color: #0072CE !important;
-    border-color: #0072CE !important;
-} */
 
 /* Custom hover effects cho nav tabs */
 .nav.nav-tabs .nav-link.active {
@@ -213,13 +170,6 @@ a:hover {
     opacity: 1;
 }
 
-/* --- PHÂN TRANG: Hover thành chữ trắng --- */
-/* .pagination .page-link:hover,
-.pagination a:hover {
-    color: #fff !important;
-    background-color: #0072CE !important;
-    border-color: #0072CE !important;
-} */
 
 /* --- BUTTON CATEGORIES: nền trắng, chữ đen, viền xanh. Hover/active: nền xanh, chữ trắng, viền trắng --- */
 .btn-category, .btn-outline-primary {

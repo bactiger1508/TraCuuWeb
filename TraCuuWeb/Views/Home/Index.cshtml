@@ -120,8 +120,8 @@
                         @tenNhomLon
                     </div>
                     <div class="p-4 rounded-bottom d-flex flex-column flex-grow-1 align-items-center text-center">
-                        <h4 class="mb-2 w-100">@goi.TenGoi</h4>
-                        <div class="goicuoc-desc mb-3 w-100">@goi.NoiDung</div>
+                        <h4 class="mb-2 text-primary w-100">@goi.TenGoi</h4>
+                        <div class="goicuoc-desc mb-3 text-dark w-100">@goi.NoiDung</div>
                         <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (goi.GiaCuocs.Any()) { @(goi.GiaCuocs.First().Gia + " VNĐ") } else { <span>Liên hệ</span> }</p>
                         <div class="d-flex justify-content-center gap-2 w-100">
                             <a href="@Url.Action("Detail", "Shop", new { id = goi.Id })" class="btn border border-info rounded-pill px-3 text-info">Chi tiết</a>
@@ -201,8 +201,8 @@
                         @tenNhomLon
                     </div>
                     <div class="p-4 rounded-bottom d-flex flex-column flex-grow-1 align-items-center text-center">
-                        <h4 class="mb-2 w-100">@goi.TenGoi</h4>
-                        <div class="goicuoc-desc mb-3 w-100">@goi.NoiDung</div>
+                        <h4 class="mb-2 text-primary w-100">@goi.TenGoi</h4>
+                        <div class="goicuoc-desc mb-3 text-dark w-100">@goi.NoiDung</div>
                         <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (goi.GiaCuocs.Any()) { @(goi.GiaCuocs.First().Gia + " VNĐ") } else { <span>Liên hệ</span> }</p>
                         <div class="d-flex justify-content-center gap-2 w-100">
                             <a href="@Url.Action("Detail", "Shop", new { id = goi.Id })" class="btn border border-info rounded-pill px-3 text-info">Chi tiết</a>
