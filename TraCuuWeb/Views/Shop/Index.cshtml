@@ -42,210 +42,238 @@
 <div class="container-fluid fruite py-5">
     <div class="container py-5">
         <h1 class="mb-4">Gói cước viễn thông</h1>
-        <div class="row g-4">
-            <div class="col-lg-12">
-                <div class="row g-4">
-                    <div class="col-xl-3">
-                        <form asp-action="Index" method="get" id="search-form" class="d-flex">
-                            <select name="searchType" class="form-select form-select-sm me-2" style="max-width: 100px;">
-                                @{
-                                    var searchTypeVal = ViewData["SearchType"]?.ToString() ?? "TenGoi";
-                                }
-                                @if (searchTypeVal == "TenGoi") {
-                                    <option value="TenGoi" selected>Tên gói</option>
-                                } else {
-                                    <option value="TenGoi">Tên gói</option>
-                                }
-                                @if (searchTypeVal == "TenDichVu") {
-                                    <option value="TenDichVu" selected>Tên dịch vụ</option>
-                                } else {
-                                    <option value="TenDichVu">Tên dịch vụ</option>
-                                }
-                                @if (searchTypeVal == "NoiDung") {
-                                    <option value="NoiDung" selected>Nội dung</option>
-                                } else {
-                                    <option value="NoiDung">Nội dung</option>
-                                }
-                            </select>
-                            <input type="search" name="SearchString" class="form-control p-3" placeholder="Tìm kiếm..." aria-describedby="search-icon-1" value="@ViewData["CurrentFilter"]">
-                            <button type="submit" id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                    <div class="col-6"></div>
-                    <div class="col-xl-3">
-                         <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
-                            <label for="fruits">Sắp xếp:</label>
-                            <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" onchange="location = this.value;">
-                                <option value="@Url.Action("Index", new { sortOrder = ""})">Giá tăng dần</option>
-                                <option value="@Url.Action("Index", new { sortOrder = "price_desc" })">Giá giảm dần</option>
-                            </select>
-                        </div>
+        <form asp-action="Index" method="get" id="shop-filter-form">
+            <div class="row g-4">
+                <div class="col-xl-3">
+                    <div class="d-flex">
+                        <select name="searchType" class="form-select form-select-sm me-2" style="max-width: 100px;">
+                            @{
+                                var searchTypeVal = ViewData["SearchType"]?.ToString() ?? "TenGoi";
+                            }
+                            @if (searchTypeVal == "TenGoi")
+                            {
+                                <option value="TenGoi" selected>Tên gói</option>
+                            }
+                            else
+                            {
+                                <option value="TenGoi">Tên gói</option>
+                            }
+                            @if (searchTypeVal == "TenDichVu")
+                            {
+                                <option value="TenDichVu" selected>Tên dịch vụ</option>
+                            }
+                            else
+                            {
+                                <option value="TenDichVu">Tên dịch vụ</option>
+                            }
+                            @if (searchTypeVal == "NoiDung")
+                            {
+                                <option value="NoiDung" selected>Nội dung</option>
+                            }
+                            else
+                            {
+                                <option value="NoiDung">Nội dung</option>
+                            }
+                        </select>
+                        <input type="search" name="SearchString" class="form-control p-3" placeholder="Tìm kiếm..." aria-describedby="search-icon-1" value="@ViewData["CurrentFilter"]">
+                        <button type="submit" id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3">
-                        <form asp-action="Index" method="get" id="filter-form">
-                             <input type="hidden" name="sortOrder" value="@ViewData["CurrentSort"]" />
-                             <input type="hidden" name="searchString" value="@ViewData["CurrentFilter"]" />
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="mb-3">
-                                        <h4>Danh mục</h4>
-                                         <div class="mb-2">
+                <div class="col-xl-6 d-flex align-items-center">
+                    <span class="fw-semibold text-primary ms-3">Đã tìm thấy @Model.Count() sản phẩm</span>
+                </div>
+                <div class="col-xl-3 d-flex align-items-center justify-content-end">
+                    <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between" style="min-width:220px;">
+                        <label for="fruits" class="me-2">Sắp xếp:</label>
+                        <select id="fruits" name="sortOrder" class="border-0 form-select-sm bg-light me-3" onchange="this.form.submit();">
+                            @{
+                                var currentSort = ViewData["CurrentSort"]?.ToString() ?? "";
+                                if (currentSort == "")
+                                {
+                                    <option value="" selected>Giá tăng dần</option>
+                                    <option value="price_desc">Giá giảm dần</option>
+                                }
+                                else if (currentSort == "price_desc")
+                                {
+                                    <option value="">Giá tăng dần</option>
+                                    <option value="price_desc" selected>Giá giảm dần</option>
+                                }
+                                else
+                                {
+                                    <option value="">Giá tăng dần</option>
+                                    <option value="price_desc">Giá giảm dần</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <h4>Danh mục</h4>
+                                <div class="mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="selectedNhomLon" id="nhomlon-0" value="0" data-target="sub-cat-0" @(selectedNhomLon == null || selectedNhomLon == 0 ? "checked" : "")>
+                                        <label class="form-check-label d-flex justify-content-between align-items-center" for="nhomlon-0">Tất cả</label>
+                                    </div>
+                                </div>
+                                @if (nhomLonsWithChildren != null)
+                                {
+                                    foreach (var nhom in nhomLonsWithChildren)
+                                    {
+                                        var hasSubcategories = nhom.NhomGoiCuocDiDongs.Any() || nhom.NhomGoiCuocBangRongs.Any();
+                                        <div class="mb-2">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="selectedNhomLon" id="nhomlon-0" value="0" data-target="sub-cat-0" @(selectedNhomLon == null || selectedNhomLon == 0 ? "checked" : "")>
-                                                <label class="form-check-label d-flex justify-content-between align-items-center" for="nhomlon-0">Tất cả <span class="text-secondary small ms-2 float-end">(@Model.Count())</span></label>
+                                                <input class="form-check-input" type="radio" name="selectedNhomLon" id="nhomlon-@nhom.Id" value="@nhom.Id" data-target="sub-cat-@nhom.Id" @(selectedNhomLon == nhom.Id ? "checked" : "")>
+                                                <label class="form-check-label d-flex justify-content-between align-items-center" for="nhomlon-@nhom.Id">@nhom.TenNhomLon</label>
                                             </div>
-                                        </div>
-                                        @if (nhomLonsWithChildren != null)
-                                        {
-                                            foreach (var nhom in nhomLonsWithChildren)
+                                            @if (hasSubcategories)
                                             {
-                                                var hasSubcategories = nhom.NhomGoiCuocDiDongs.Any() || nhom.NhomGoiCuocBangRongs.Any();
-                                                <div class="mb-2">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="selectedNhomLon" id="nhomlon-@nhom.Id" value="@nhom.Id" data-target="sub-cat-@nhom.Id" @(selectedNhomLon == nhom.Id ? "checked" : "")>
-                                                        <label class="form-check-label d-flex justify-content-between align-items-center" for="nhomlon-@nhom.Id">@nhom.TenNhomLon <span class="text-secondary small ms-2 float-end">(@(nhomLonCounts != null && nhomLonCounts.ContainsKey(nhom.Id) ? nhomLonCounts[nhom.Id] : 0))</span></label>
-                                                    </div>
-                                                    @if (hasSubcategories)
+                                                <div id="sub-cat-@nhom.Id" class="sub-category-container" style="padding-left: 25px; @(selectedNhomLon == nhom.Id ? "" : "display: none;")">
+                                                    @foreach (var subCat in nhom.NhomGoiCuocDiDongs)
                                                     {
-                                                        <div id="sub-cat-@nhom.Id" class="sub-category-container" style="padding-left: 25px; @(selectedNhomLon == nhom.Id ? "" : "display: none;")">
-                                                            @foreach (var subCat in nhom.NhomGoiCuocDiDongs)
-                                                            {
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" name="diDongIds" value="@subCat.Id" id="dd-@subCat.Id" @(selectedDiDongIds.Contains(subCat.Id) ? "checked" : "")>
-                                                                    <label class="form-check-label d-flex justify-content-between align-items-center" for="dd-@subCat.Id">@subCat.TenNhom <span class="text-secondary small ms-2 float-end">(@(nhomDiDongCounts != null && nhomDiDongCounts.ContainsKey(subCat.Id) ? nhomDiDongCounts[subCat.Id] : 0))</span></label>
-                                                                </div>
-                                                            }
-                                                            @foreach (var subCat in nhom.NhomGoiCuocBangRongs)
-                                                            {
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" name="bangRongIds" value="@subCat.Id" id="br-@subCat.Id" @(selectedBangRongIds.Contains(subCat.Id) ? "checked" : "")>
-                                                                    <label class="form-check-label d-flex justify-content-between align-items-center" for="br-@subCat.Id">@subCat.TenNhom <span class="text-secondary small ms-2 float-end">(@(nhomBangRongCounts != null && nhomBangRongCounts.ContainsKey(subCat.Id) ? nhomBangRongCounts[subCat.Id] : 0))</span></label>
-                                                                </div>
-                                                            }
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="diDongIds" value="@subCat.Id" id="dd-@subCat.Id" @(selectedDiDongIds.Contains(subCat.Id) ? "checked" : "")>
+                                                            <label class="form-check-label d-flex justify-content-between align-items-center" for="dd-@subCat.Id">@subCat.TenNhom</label>
+                                                        </div>
+                                                    }
+                                                    @foreach (var subCat in nhom.NhomGoiCuocBangRongs)
+                                                    {
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="bangRongIds" value="@subCat.Id" id="br-@subCat.Id" @(selectedBangRongIds.Contains(subCat.Id) ? "checked" : "")>
+                                                            <label class="form-check-label d-flex justify-content-between align-items-center" for="br-@subCat.Id">@subCat.TenNhom</label>
                                                         </div>
                                                     }
                                                 </div>
                                             }
-                                        }
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="mb-3">
-                                        <h4 class="mb-2">Lọc theo giá</h4>
-                                        <div class="d-flex align-items-center">
-                                            <input type="number" name="minPrice" class="form-control" placeholder="Từ" value="@minPrice">
-                                            <span class="mx-2">-</span>
-                                            <input type="number" name="maxPrice" class="form-control" placeholder="Đến" value="@maxPrice">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn btn-primary w-100 mb-1">Áp dụng</button>
-                                    <div class="text-center mt-1">
-                                        <a href="#" class="text-secondary small fw-semibold" style="color:#6c757d !important;" onclick="resetFilters();return false;">Xóa lọc</a>
-                                    </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <h4 class="mb-2">Lọc theo giá</h4>
+                                <div class="d-flex align-items-center">
+                                    <input type="number" name="minPrice" class="form-control" placeholder="Từ" value="@minPrice">
+                                    <span class="mx-2">-</span>
+                                    <input type="number" name="maxPrice" class="form-control" placeholder="Đến" value="@maxPrice">
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="row g-4 justify-content-start">
-                            @foreach (var item in Model)
-                            {
-                                <div class="col-md-6 col-lg-6 col-xl-4 d-flex">
-                                    <div class="rounded position-relative fruite-item goicuoc-equal-box w-100 text-start bg-light shadow-sm">
-                                        <div class="fruite-img">
-                                            <img src="@(string.IsNullOrEmpty(item.HinhAnh) ? Url.Content("~/img/fruite-item-1.jpg") : item.HinhAnh)" class="img-fluid w-100 rounded-top goicuoc-equal-img" alt="@item.TenGoi">
-                                        </div>
-                                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; font-weight:bold;">
-                                            @{
-                                                string tenNhomLon = "";
-                                                if (item.IdNhomDiDongNavigation != null && item.IdNhomDiDongNavigation.IdNhomLonNavigation != null)
-                                                {
-                                                    tenNhomLon = item.IdNhomDiDongNavigation.IdNhomLonNavigation.TenNhomLon;
-                                                }
-                                                else if (item.IdNhomBangRongNavigation != null && item.IdNhomBangRongNavigation.IdNhomLonNavigation != null)
-                                                {
-                                                    tenNhomLon = item.IdNhomBangRongNavigation.IdNhomLonNavigation.TenNhomLon;
-                                                }
-                                                else
-                                                {
-                                                    tenNhomLon = "Gói cước mới";
-                                                }
-                                                if (tenNhomLon.StartsWith("Gói "))
-                                                {
-                                                    tenNhomLon = tenNhomLon.Substring(4);
-                                                }
-                                            }
-                                            @tenNhomLon
-                                        </div>
-                                        <div class="p-4 rounded-bottom d-flex flex-column flex-grow-1 align-items-center text-center">
-                                            <h4 class="mb-2 text-primary w-100">@item.TenGoi</h4>
-                                            <div class="goicuoc-desc mb-3 text-dark w-100">@item.NoiDung</div>
-                                            <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (item.GiaCuocs.Any()) { @(item.GiaCuocs.First().Gia + " VNĐ") } else { <span>Liên hệ</span> }</p>
-                                            <div class="d-flex justify-content-center gap-2 w-100">
-                                                <a href="@Url.Action("Detail", "Shop", new { id = item.Id })" class="btn border border-info rounded-pill px-3 text-info">Chi tiết</a>
-                                                <a href="#" class="btn border border-primary rounded-pill px-3 text-primary">Đăng ký</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            }
                         </div>
-                        <!-- Pagination -->
-                        <div class="col-12">
-                            <nav class="pagination-main d-flex justify-content-center mt-4">
-                                <ul class="pagination flex-row">
-                                    @if (currentPage > 1)
-                                    {
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" onclick="changePage(1); return false;">&laquo;&laquo;</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" onclick="changePage(@currentPage - 1); return false;">&laquo;</a>
-                                        </li>
-                                    }
-
-                                    @foreach (var p in paging)
-                                    {
-                                        if (p == null)
-                                        {
-                                            <li class="page-item disabled"><span class="page-link">...</span></li>
-                                        }
-                                        else
-                                        {
-                                            <li class="page-item @(p == currentPage ? "active" : "")">
-                                                <a class="page-link" href="#" onclick="changePage(@p); return false;">@p</a>
-                                            </li>
-                                        }
-                                    }
-
-                                    @if (currentPage < totalPages)
-                                    {
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" onclick="changePage(@currentPage + 1); return false;">&raquo;</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" onclick="changePage(@totalPages); return false;">&raquo;&raquo;</a>
-                                        </li>
-                                    }
-                                </ul>
-                            </nav>
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-primary w-100 mb-1">Áp dụng</button>
+                            <div class="text-center mt-1">
+                                <a href="#" class="text-secondary small fw-semibold" style="color:#6c757d !important;" onclick="resetFilters();return false;">Xóa lọc</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-9">
+                    <div class="row g-4 justify-content-start">
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-md-6 col-lg-6 col-xl-4 d-flex">
+                                <div class="rounded position-relative fruite-item goicuoc-equal-box w-100 text-start bg-light shadow-sm">
+                                    <div class="fruite-img">
+                                        <img src="@(string.IsNullOrEmpty(item.HinhAnh) ? Url.Content("~/img/fruite-item-1.jpg") : item.HinhAnh)" class="img-fluid w-100 rounded-top goicuoc-equal-img" alt="@item.TenGoi">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; font-weight:bold;">
+                                        @{
+                                            string tenNhomLon = "";
+                                            if (item.IdNhomDiDongNavigation != null && item.IdNhomDiDongNavigation.IdNhomLonNavigation != null)
+                                            {
+                                                tenNhomLon = item.IdNhomDiDongNavigation.IdNhomLonNavigation.TenNhomLon;
+                                            }
+                                            else if (item.IdNhomBangRongNavigation != null && item.IdNhomBangRongNavigation.IdNhomLonNavigation != null)
+                                            {
+                                                tenNhomLon = item.IdNhomBangRongNavigation.IdNhomLonNavigation.TenNhomLon;
+                                            }
+                                            else
+                                            {
+                                                tenNhomLon = "Gói cước mới";
+                                            }
+                                            if (tenNhomLon.StartsWith("Gói "))
+                                            {
+                                                tenNhomLon = tenNhomLon.Substring(4);
+                                            }
+                                        }
+                                        @tenNhomLon
+                                    </div>
+                                    <div class="p-4 rounded-bottom d-flex flex-column flex-grow-1 align-items-center text-center">
+                                        <h4 class="mb-2 text-primary w-100">@item.TenGoi</h4>
+                                        <div class="goicuoc-desc mb-3 text-dark w-100">@item.NoiDung</div>
+                                        <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (item.GiaCuocs.Any()) {
+                                        @(item.GiaCuocs.First().Gia + " VNĐ")
+                                    } else
+                                    {
+
+                                        <span>Liên hệ</span>
+                                    }
+</p>
+                                    <div class="d-flex justify-content-center gap-2 w-100">
+                                        <a href="@Url.Action("Detail", "Shop", new { id = item.Id })" class="btn border border-info rounded-pill px-3 text-info">Chi tiết</a>
+                                        <a href="#" class="btn border border-primary rounded-pill px-3 text-primary">Đăng ký</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                }
+                    </div>
+                    <!-- Pagination -->
+                    <div class="col-12">
+                        <nav class="pagination-main d-flex justify-content-center mt-4">
+                            <ul class="pagination flex-row">
+                                @if (currentPage > 1)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" onclick="changePage(1); return false;">&laquo;&laquo;</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" onclick="changePage(@currentPage - 1); return false;">&laquo;</a>
+                                    </li>
+                                }
+
+                                @foreach (var p in paging)
+                                {
+                                    if (p == null)
+                                    {
+                                        <li class="page-item disabled"><span class="page-link">...</span></li>
+                                    }
+                                    else
+                                    {
+                                        <li class="page-item @(p == currentPage ? "active" : "")">
+                                            <a class="page-link" href="#" onclick="changePage(@p); return false;">@p</a>
+                                        </li>
+                                    }
+                                }
+
+                                @if (currentPage < totalPages)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" onclick="changePage(@currentPage + 1); return false;">&raquo;</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" onclick="changePage(@totalPages); return false;">&raquo;&raquo;</a>
+                                    </li>
+                                }
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>
-<!-- Fruits Shop End--> 
+<!-- Fruits Shop End-->
 @section Scripts {
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const radios = document.querySelectorAll('input[type="radio"][name="selectedNhomLon"]');
-            
+
             function toggleSubCategories() {
                 document.querySelectorAll('.sub-category-container').forEach(container => {
                     container.style.display = 'none';
@@ -273,7 +301,7 @@
         });
 
         function changePage(page) {
-            const form = document.getElementById('filter-form');
+            const form = document.getElementById('shop-filter-form');
             const pageInput = document.createElement('input');
             pageInput.type = 'hidden';
             pageInput.name = 'page';
@@ -286,7 +314,7 @@
             window.location.href = window.location.pathname;
         }
     </script>
-} 
+}
 <style>
     /* Ép màu xám cho số đếm filter nếu bị override bởi CSS khác */
     .filter-count, .form-check-label .text-secondary {

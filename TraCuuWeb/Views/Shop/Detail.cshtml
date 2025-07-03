@@ -19,19 +19,25 @@
         tenNhomLon = tenNhomLon.Substring(4);
     }
 }
-<div class="container py-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-7 col-xl-6">
-            <div class="card shadow-lg border-primary rounded-lg">
-                <div class="card-img-top text-center bg-light p-3 rounded-top">
-                    <img src="@(string.IsNullOrEmpty(Model.HinhAnh) ? Url.Content("~/img/fruite-item-1.jpg") : Model.HinhAnh)" alt="@Model.TenGoi" class="img-fluid rounded" style="max-height:220px;object-fit:cover;">
-                </div>
-                <div class="card-body text-center">
-                    <span class="badge bg-primary mb-2 px-3 py-2 fs-6">@tenNhomLon</span>
-                    <h2 class="mb-3 text-primary" style="color:#0072CE;font-family:'Montserrat','Segoe UI',Arial,sans-serif;font-weight:700;">@Model.TenGoi</h2>
-                    <div class="mb-3 text-dark" style="white-space:pre-line;font-size:1.1rem;">@Model.NoiDung</div>
-                    <div class="mb-3">
-                        <span class="fs-3 fw-bold text-dark">
+
+
+<!-- Single Product Start -->
+<div class="container-fluid py-5 mt-5">
+    <div class="container py-5">
+        <div class="row g-4 mb-5">
+            <div class="col-lg-8 col-xl-9">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="border rounded">
+                            <a href="#">
+                                <img src="@(string.IsNullOrEmpty(Model.HinhAnh) ? Url.Content("~/img/fruite-item-1.jpg") : Model.HinhAnh)" class="img-fluid rounded" alt="@Model.TenGoi">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="fw-bold mb-3">@Model.TenGoi</h4>
+                        <p class="mb-3">Danh mục: @tenNhomLon</p>
+                        <h5 class="fw-bold mb-3">
                             @if (Model.GiaCuocs.Any())
                             {
                                 @(Model.GiaCuocs.First().Gia + " VNĐ")
@@ -40,14 +46,254 @@
                             {
                                 <span>Liên hệ</span>
                             }
-                        </span>
+                        </h5>
+                        <div class="d-flex mb-4">
+                            <i class="fa fa-star text-secondary"></i>
+                            <i class="fa fa-star text-secondary"></i>
+                            <i class="fa fa-star text-secondary"></i>
+                            <i class="fa fa-star text-secondary"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p class="mb-4">@Model.NoiDung</p>
+                        @if (!string.IsNullOrEmpty(Model.DichVuBundle))
+                        {
+                            <p class="mb-4">Dịch vụ đi kèm: @Model.DichVuBundle</p>
+                        }
+                        <div class="input-group quantity mb-5" style="width: 100px;">
+                            <div class="input-group-btn">
+                                <button class="btn btn-sm btn-minus rounded-circle bg-light border">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                            <div class="input-group-btn">
+                                <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
+                            <i class="fa fa-shopping-bag me-2 text-primary"></i> Đăng ký ngay
+                        </a>
                     </div>
-                    <a href="#" class="btn btn-primary btn-lg rounded-pill px-5">Đăng ký</a>
+                    <div class="col-lg-12">
+                        <nav>
+                            <div class="nav nav-tabs mb-3">
+                                <button class="nav-link active border-white border-bottom-0" type="button" role="tab"
+                                        id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                                        aria-controls="nav-about" aria-selected="true">
+                                    Mô tả chi tiết
+                                </button>
+                                <button class="nav-link border-white border-bottom-0" type="button" role="tab"
+                                        id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
+                                        aria-controls="nav-mission" aria-selected="false">
+                                    Đánh giá
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content mb-5">
+                            <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                                <p>@Model.NoiDung</p>
+                                @if (!string.IsNullOrEmpty(Model.DichVuBundle))
+                                {
+                                    <p>Dịch vụ đi kèm: @Model.DichVuBundle</p>
+                                }
+                                <div class="px-2">
+                                    <div class="row g-4">
+                                        <div class="col-6">
+                                            <div class="row bg-light align-items-center text-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Loại gói</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">@tenNhomLon</p>
+                                                </div>
+                                            </div>
+                                            <div class="row text-center align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Nhà mạng</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">VNPT</p>
+                                                </div>
+                                            </div>
+                                            <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Thời hạn</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">30 ngày</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                                <div class="d-flex">
+                                    <img src="~/img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt="">
+                                    <div class="">
+                                        <p class="mb-2" style="font-size: 14px;">12 tháng 4, 2024</p>
+                                        <div class="d-flex justify-content-between">
+                                            <h5>Nguyễn Văn A</h5>
+                                            <div class="d-flex mb-3">
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p>Gói cước rất tốt, tốc độ mạng ổn định và giá cả hợp lý. Dịch vụ khách hàng cũng rất nhiệt tình.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="~/img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt="">
+                                    <div class="">
+                                        <p class="mb-2" style="font-size: 14px;">10 tháng 4, 2024</p>
+                                        <div class="d-flex justify-content-between">
+                                            <h5>Trần Thị B</h5>
+                                            <div class="d-flex mb-3">
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="text-dark">Gói cước đáp ứng tốt nhu cầu sử dụng. Tuy nhiên cần cải thiện thêm về tốc độ mạng vào giờ cao điểm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-footer bg-white border-0 text-center">
-                    <a href="@Url.Action("Index", "Shop")" class="btn btn-link">&laquo; Quay lại danh sách</a>
+            </div>
+            <div class="col-lg-4 col-xl-3">
+                <div class="row g-4 fruite">
+                    <div class="col-lg-12">
+                        <h4 class="mb-4">Gói cước nổi bật</h4>
+                        @if (ViewBag.BestSellers != null)
+                        {
+                            foreach (var item in (IEnumerable<TraCuuWeb.Data.GoiCuoc>)ViewBag.BestSellers)
+                            {
+                                <div class="d-flex align-items-center justify-content-start mb-3">
+                                    <div class="rounded" style="width: 100px; height: 100px;">
+                                        <img src="@(string.IsNullOrEmpty(item.HinhAnh) ? Url.Content("~/img/fruite-item-1.jpg") : item.HinhAnh)" class="img-fluid rounded" alt="@item.TenGoi">
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="mb-2">@item.TenGoi</h6>
+                                        <div class="d-flex mb-2">
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <h5 class="fw-bold me-2">
+                                                @(item.GiaCuocs.Any() ? item.GiaCuocs.First().Gia + " VNĐ" : "Liên hệ")
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
                 </div>
             </div>
         </div>
+        <h1 class="fw-bold mb-0 mb-4" style="margin-bottom: 2.5rem !important;">Gói cước liên quan</h1>
+        <div class="vesitable">
+            <div class="owl-carousel vegetable-carousel justify-content-center">
+                @if (ViewBag.RelatedPackages != null)
+                {
+                    foreach (var item in (IEnumerable<TraCuuWeb.Data.GoiCuoc>)ViewBag.RelatedPackages)
+                    {
+                        var nhomLon = item.IdNhomDiDongNavigation?.IdNhomLonNavigation?.TenNhomLon ?? item.IdNhomBangRongNavigation?.IdNhomLonNavigation?.TenNhomLon ?? "";
+                        string moTa = item.NoiDung;
+                        if (!string.IsNullOrEmpty(moTa) && moTa.Length > 80) moTa = moTa.Substring(0, 80) + "...";
+                        <div class="border border-primary rounded position-relative vesitable-item related-box" style="min-height: 370px; display: flex; flex-direction: column;">
+                            <div class="vesitable-img" style="height: 160px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                                <img src="@(string.IsNullOrEmpty(item.HinhAnh) ? Url.Content("~/img/fruite-item-1.jpg") : item.HinhAnh)" class="img-fluid w-100 rounded-top" alt="@item.TenGoi" style="object-fit: cover; height: 100%;">
+                            </div>
+                            <div class="tag-nhomlon-shop position-absolute" style="top: 10px; left: 10px;">
+                                @nhomLon
+                            </div>
+                            <div class="p-4 pb-0 rounded-bottom d-flex flex-column flex-grow-1">
+                                <h4>@item.TenGoi</h4>
+                                <p style="min-height: 48px; max-height: 48px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">@moTa</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap mt-auto">
+                                    <p class="text-dark fs-5 fw-bold">
+                                        @(item.GiaCuocs.Any() ? item.GiaCuocs.First().Gia + " VNĐ" : "Liên hệ")
+                                    </p>
+                                    <a href="@Url.Action("Detail", "Shop", new { id = item.Id })" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary">
+                                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Chi tiết
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
     </div>
-</div> 
+</div>
+<!-- Single Product End -->
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Quantity buttons functionality
+            $('.btn-minus').click(function() {
+                var input = $(this).siblings('input');
+                var value = parseInt(input.val());
+                if (value > 1) {
+                    input.val(value - 1);
+                }
+            });
+
+            $('.btn-plus').click(function() {
+                var input = $(this).siblings('input');
+                var value = parseInt(input.val());
+                input.val(value + 1);
+            });
+        });
+    </script>
+}
+
+<style>
+    .related-box {
+        min-height: 370px;
+    }
+
+        .related-box .vesitable-img {
+            height: 160px;
+        }
+
+        .related-box h4 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-box p {
+            font-size: 1rem;
+        }
+
+    .tag-nhomlon-shop {
+        background: #fff;
+        color: #007bff;
+        border: 2px solid #007bff;
+        border-radius: 20px;
+        font-weight: 600;
+        padding: 2px 18px;
+        font-size: 1rem;
+        display: inline-block;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        z-index: 2;
+    }
+
+    .related-section-title {
+        margin-bottom: 2.5rem !important;
+    }
+</style> 

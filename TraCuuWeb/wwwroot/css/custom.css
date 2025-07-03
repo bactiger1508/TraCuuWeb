@@ -11,56 +11,56 @@
     border-color: #0072CE !important;
 }
 
-.btn-primary:hover {
-    color: #000 !important;
-    background-color: #198ed6 !important;
-    border-color: #198ed6 !important;
-}
+    .btn-primary:hover {
+        color: #000 !important;
+        background-color: #198ed6 !important;
+        border-color: #198ed6 !important;
+    }
 
-.btn-primary:focus,
-.btn-primary.focus {
-    color: #000 !important;
-    background-color: #198ed6 !important;
-    border-color: #198ed6 !important;
-    box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.5) !important;
-}
+    .btn-primary:focus,
+    .btn-primary.focus {
+        color: #000 !important;
+        background-color: #198ed6 !important;
+        border-color: #198ed6 !important;
+        box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.5) !important;
+    }
 
-.btn-primary:disabled,
-.btn-primary.disabled {
-    color: #000 !important;
-    background-color: #0072CE !important;
-    border-color: #0072CE !important;
-}
+    .btn-primary:disabled,
+    .btn-primary.disabled {
+        color: #000 !important;
+        background-color: #0072CE !important;
+        border-color: #0072CE !important;
+    }
 
 .btn-outline-primary {
     color: #0072CE !important;
     border-color: #0072CE !important;
 }
 
-.btn-outline-primary:hover {
-    color: #000 !important;
-    background-color: #0072CE !important;
-    border-color: #0072CE !important;
-}
+    .btn-outline-primary:hover {
+        color: #000 !important;
+        background-color: #0072CE !important;
+        border-color: #0072CE !important;
+    }
 
-.btn-outline-primary:focus,
-.btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.5) !important;
-}
+    .btn-outline-primary:focus,
+    .btn-outline-primary.focus {
+        box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.5) !important;
+    }
 
-.btn-outline-primary:disabled,
-.btn-outline-primary.disabled {
-    color: #0072CE !important;
-    background-color: transparent !important;
-}
+    .btn-outline-primary:disabled,
+    .btn-outline-primary.disabled {
+        color: #0072CE !important;
+        background-color: transparent !important;
+    }
 
 .btn-link {
     color: #0072CE !important;
 }
 
-.btn-link:hover {
-    color: #198ed6 !important;
-}
+    .btn-link:hover {
+        color: #198ed6 !important;
+    }
 
 /* Form controls */
 .form-check-input:checked {
@@ -87,18 +87,18 @@ a {
     transition: color 0.3s;
 }
 
-a:hover {
-    color: #0072CE !important;
-}
+    a:hover {
+        color: #0072CE !important;
+    }
 
 .link-primary {
     color: #0072CE !important;
 }
 
-.link-primary:hover,
-.link-primary:focus {
-    color: #198ed6 !important;
-}
+    .link-primary:hover,
+    .link-primary:focus {
+        color: #198ed6 !important;
+    }
 
 /* Progress bars */
 .progress-bar {
@@ -165,10 +165,11 @@ a:hover {
     color: #fff !important;
     opacity: 0.5;
 }
-.footer a.text-white-50:hover {
-    color: #0072CE !important;
-    opacity: 1;
-}
+
+    .footer a.text-white-50:hover {
+        color: #0072CE !important;
+        opacity: 1;
+    }
 
 
 /* --- BUTTON CATEGORIES: nền trắng, chữ đen, viền xanh. Hover/active: nền xanh, chữ trắng, viền trắng --- */
@@ -178,49 +179,57 @@ a:hover {
     border: 1.5px solid #0072CE !important;
     transition: background 0.2s, color 0.2s, border 0.2s;
 }
-.btn-category:hover, .btn-outline-primary:hover,
-.btn-category.active, .btn-outline-primary.active {
-    color: #fff !important;
-    background-color: #0072CE !important;
-    border: 1.5px solid #fff !important;
-}
 
-/* Đảm bảo nút active cũng đúng style */
-.btn-category.active,
-.btn-outline-primary.active {
-    color: #fff !important;
-    background-color: #0072CE !important;
-    border: 1.5px solid #0072CE !important;
-}
+    .btn-category:hover, .btn-outline-primary:hover,
+    .btn-category.active, .btn-outline-primary.active {
+        color: #fff !important;
+        background-color: #0072CE !important;
+        border: 1.5px solid #fff !important;
+    }
+
+    /* Đảm bảo nút active cũng đúng style */
+    .btn-category.active,
+    .btn-outline-primary.active {
+        color: #fff !important;
+        background-color: #0072CE !important;
+        border: 1.5px solid #0072CE !important;
+    }
 
 /* --- FOOTER LAYOUT --- */
 .footer {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
 }
-.footer .container {
-    padding-left: 32px !important;
-    padding-right: 32px !important;
-}
-.footer .row > div {
-    margin-bottom: 24px;
-}
-.footer h5, .footer h4, .footer h3 {
-    margin-bottom: 18px !important;
-}
-.footer p, .footer ul, .footer li, .footer div, .footer span {
-    line-height: 2.2 !important;
-}
-.footer .d-flex.gap-3 {
-    justify-content: center;
-    gap: 28px !important;
-    margin-top: 10px;
-}
+
+    .footer .container {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    .footer .row > div {
+        margin-bottom: 24px;
+    }
+
+    .footer h5, .footer h4, .footer h3 {
+        margin-bottom: 18px !important;
+    }
+
+    .footer p, .footer ul, .footer li, .footer div, .footer span {
+        line-height: 2.2 !important;
+    }
+
+    .footer .d-flex.gap-3 {
+        justify-content: center;
+        gap: 28px !important;
+        margin-top: 10px;
+    }
+
 @media (max-width: 991px) {
     .footer .container {
         padding-left: 12px !important;
         padding-right: 12px !important;
     }
+
     .footer .d-flex.gap-3 {
         justify-content: flex-start;
     }
@@ -231,31 +240,35 @@ a:hover {
     transition: box-shadow 0.5s, transform 0.5s;
     border: 2px solid #0072CE !important;
 }
-.goicuoc-equal-box:hover {
-    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
-    transform: translateY(-4px) scale(1.03);
-    z-index: 2;
-}
-.goicuoc-equal-box .fruite-img {
-    overflow: hidden;
-    transition: 0.5s;
-    border-radius: 10px 10px 0 0;
-}
-.goicuoc-equal-box .fruite-img img {
-    transition: transform 0.5s;
-}
-.goicuoc-equal-box:hover .fruite-img img {
-    transform: scale(1.13);
-}
 
-/* Tag nhóm lớn (ví dụ: .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute) màu xanh VNPT mới */
-.goicuoc-equal-box .position-absolute,
-.fruite-item .position-absolute {
-    background: #fff !important;
-    color: #0072CE !important;
-    border: 1.5px solid #0072CE !important;
-    font-weight: bold;
-}
+    .goicuoc-equal-box:hover {
+        box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+        transform: translateY(-4px) scale(1.03);
+        z-index: 2;
+    }
+
+    .goicuoc-equal-box .fruite-img {
+        overflow: hidden;
+        transition: 0.5s;
+        border-radius: 10px 10px 0 0;
+    }
+
+        .goicuoc-equal-box .fruite-img img {
+            transition: transform 0.5s;
+        }
+
+    .goicuoc-equal-box:hover .fruite-img img {
+        transform: scale(1.13);
+    }
+
+    /* Tag nhóm lớn (ví dụ: .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute) màu xanh VNPT mới */
+    .goicuoc-equal-box .position-absolute,
+    .fruite-item .position-absolute {
+        background: #fff !important;
+        color: #0072CE !important;
+        border: 1.5px solid #0072CE !important;
+        font-weight: bold;
+    }
 
 /* Nút tìm kiếm màu xanh #0dcaf0 */
 .btn-search,
@@ -293,11 +306,12 @@ h1, h2, h3, .section-title, .fw-bold, .display-6, .display-5, .display-4, .displ
     border: 1.5px solid #0072CE !important;
     transition: background 0.3s, color 0.3s, border 0.3s;
 }
-.btn:hover, .btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-search:hover, .position-relative.w-100 button[type="submit"]:hover {
-    background-color: #fff !important;
-    color: #0072CE !important;
-    border: 1.5px solid #0072CE !important;
-}
+
+    .btn:hover, .btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-search:hover, .position-relative.w-100 button[type="submit"]:hover {
+        background-color: #fff !important;
+        color: #0072CE !important;
+        border: 1.5px solid #0072CE !important;
+    }
 
 /* Icon hero section: icon trắng, nền xanh */
 .featurs .featurs-icon {
@@ -310,10 +324,11 @@ h1, h2, h3, .section-title, .fw-bold, .display-6, .display-5, .display-4, .displ
     height: 80px;
     margin: 0 auto 18px auto;
 }
-.featurs .featurs-icon i {
-    color: #fff !important;
-    font-size: 2.5rem;
-}
+
+    .featurs .featurs-icon i {
+        color: #fff !important;
+        font-size: 2.5rem;
+    }
 
 /* Nút trong box sản phẩm và nút category: nền trắng, viền xanh, chữ xanh, hover nền xanh chữ trắng */
 .btn, .btn-primary, .btn-success, .btn-info, .btn-search, .position-relative.w-100 button[type="submit"],
@@ -323,34 +338,36 @@ h1, h2, h3, .section-title, .fw-bold, .display-6, .display-5, .display-4, .displ
     border: 1.5px solid #0072CE !important;
     transition: background 0.3s, color 0.3s, border 0.3s;
 }
-.btn:hover, .btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-search:hover, .position-relative.w-100 button[type="submit"]:hover,
-.btn-outline-primary:hover, .btn-category:hover, .btn-outline-warning:hover, .pagination .page-link:hover, .pagination a:hover, .nav-pills .nav-link:hover, .nav-link:hover, .category-btn:hover,
-.btn.active, .btn-primary.active, .btn-success.active, .btn-info.active, .btn-search.active, .btn-outline-primary.active, .btn-category.active, .btn-outline-warning.active, .category-btn.active {
-    background-color: #0072CE !important;
-    color: #fff !important;
-    border: 1.5px solid #0072CE !important;
-}
+
+    .btn:hover, .btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-search:hover, .position-relative.w-100 button[type="submit"]:hover,
+    .btn-outline-primary:hover, .btn-category:hover, .btn-outline-warning:hover, .pagination .page-link:hover, .pagination a:hover, .nav-pills .nav-link:hover, .nav-link:hover, .category-btn:hover,
+    .btn.active, .btn-primary.active, .btn-success.active, .btn-info.active, .btn-search.active, .btn-outline-primary.active, .btn-category.active, .btn-outline-warning.active, .category-btn.active {
+        background-color: #0072CE !important;
+        color: #fff !important;
+        border: 1.5px solid #0072CE !important;
+    }
 
 /* Viền box sản phẩm màu xanh VNPT mới */
 .goicuoc-equal-box {
     border: 2px solid #0072CE !important;
 }
 
-/* Tag nhóm lớn (ví dụ: .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute) màu xanh VNPT mới */
-.goicuoc-equal-box .position-absolute,
-.fruite-item .position-absolute {
-    background: #fff !important;
-    color: #0072CE !important;
-    border: 1.5px solid #0072CE !important;
-    font-weight: bold;
-}
-.goicuoc-equal-box .position-absolute,
-.fruite-item .position-absolute {
-    background: #fff !important;
-    color: #0072CE !important;
-    border: 1.5px solid #0072CE !important;
-    font-weight: bold;
-}
+    /* Tag nhóm lớn (ví dụ: .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute) màu xanh VNPT mới */
+    .goicuoc-equal-box .position-absolute,
+    .fruite-item .position-absolute {
+        background: #fff !important;
+        color: #0072CE !important;
+        border: 1.5px solid #0072CE !important;
+        font-weight: bold;
+    }
+
+    .goicuoc-equal-box .position-absolute,
+    .fruite-item .position-absolute {
+        background: #fff !important;
+        color: #0072CE !important;
+        border: 1.5px solid #0072CE !important;
+        font-weight: bold;
+    }
 
 /* Navbar menu: chữ đen, hover/active chữ xanh, không nền, không border */
 .navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:active {
@@ -360,25 +377,27 @@ h1, h2, h3, .section-title, .fw-bold, .display-6, .display-5, .display-4, .displ
     box-shadow: none !important;
     transition: color 0.2s;
 }
-.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
-    color: #0072CE !important;
-    background: none !important;
-    border: none !important;
-}
+
+    .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
+        color: #0072CE !important;
+        background: none !important;
+        border: none !important;
+    }
 
 /* Bỏ border phân trang, chỉ border cho trang đang chọn khi hover/active */
 .pagination .page-link, .pagination a {
     border: none !important;
     border-radius: 0.5rem !important;
 }
-.pagination .page-item.active .page-link, .pagination .page-link.active, .pagination a.active,
-.pagination .page-link:hover, .pagination a:hover {
-    background-color: #0072CE !important;
-    color: #fff !important;
-    border-radius: 0.5rem !important;
-    border: none !important;
-    box-shadow: 0 2px 8px 0 rgba(0,114,206,0.08);
-}
+
+    .pagination .page-item.active .page-link, .pagination .page-link.active, .pagination a.active,
+    .pagination .page-link:hover, .pagination a:hover {
+        background-color: #0072CE !important;
+        color: #fff !important;
+        border-radius: 0.5rem !important;
+        border: none !important;
+        box-shadow: 0 2px 8px 0 rgba(0,114,206,0.08);
+    }
 
 /* Toàn bộ chữ (trừ tiêu đề lớn) là đen */
 body, p, span, li, .nav-link, .tab-link, .pagination, .btn, a, .card, .form-control, label, th, td, input, select, textarea {
@@ -395,9 +414,10 @@ a, .nav-link, .tab-link, .pagination a, .btn {
     color: #212529 !important;
     transition: color 0.2s;
 }
-a:hover, .nav-link:hover, .tab-link:hover, .pagination a:hover, .btn:hover {
-    color: #fff !important;
-}
+
+    a:hover, .nav-link:hover, .tab-link:hover, .pagination a:hover, .btn:hover {
+        color: #fff !important;
+    }
 
 /* Tag group-label trong card sản phẩm: chữ đen, nền trắng, viền xanh */
 .card .group-label, .goicuoc-equal-box .group-label, .fruite-item .group-label, .goicuoc-equal-box .position-absolute, .fruite-item .position-absolute {
@@ -411,19 +431,20 @@ footer, .footer, .footer * {
     color: #bfc9c2 !important;
 }
 
-/* Footer tiêu đề (h4, strong) vẫn trắng nổi bật */
-footer h4, .footer h4, footer strong, .footer strong {
-    color: #fff !important;
-}
+    /* Footer tiêu đề (h4, strong) vẫn trắng nổi bật */
+    footer h4, .footer h4, footer strong, .footer strong {
+        color: #fff !important;
+    }
 
 /* Navbar icon: hover thành màu xanh, không phải trắng */
 .navbar .fa, .navbar .fas, .navbar .fa-user, .navbar .fa-shopping-bag {
     color: #212529 !important;
     transition: color 0.2s;
 }
-.navbar .fa:hover, .navbar .fas:hover, .navbar .fa-user:hover, .navbar .fa-shopping-bag:hover {
-    color: #0072CE !important;
-}
+
+    .navbar .fa:hover, .navbar .fas:hover, .navbar .fa-user:hover, .navbar .fa-shopping-bag:hover {
+        color: #0072CE !important;
+    }
 
 /* Override warning -> primary */
 .bg-warning, .text-warning, .border-warning, .btn-warning, .btn-outline-warning {
@@ -438,11 +459,11 @@ footer h4, .footer h4, footer strong, .footer strong {
     border-color: #0072CE !important;
 }
 
-.btn-outline-warning:hover, .btn-warning:hover {
-    background-color: #0072CE !important;
-    color: #fff !important;
-    border-color: #0072CE !important;
-}
+    .btn-outline-warning:hover, .btn-warning:hover {
+        background-color: #0072CE !important;
+        color: #fff !important;
+        border-color: #0072CE !important;
+    }
 
 .text-warning {
     color: #0072CE !important;
@@ -464,18 +485,18 @@ input[type="text"], input[type="search"], .form-control {
     color: #212529 !important;
 }
 
-input[type="text"]::placeholder, input[type="search"]::placeholder, .form-control::placeholder {
-    color: #bfc9c2 !important;
-}
+    input[type="text"]::placeholder, input[type="search"]::placeholder, .form-control::placeholder {
+        color: #bfc9c2 !important;
+    }
 
 .position-relative.w-100 input[type="text"], .position-relative.w-100 input[type="search"], .position-relative.w-100 .form-control {
     border: 1.5px solid #0072CE !important;
 }
 
-.position-relative.w-100 input[type="text"]:focus, .position-relative.w-100 input[type="search"]:focus, .position-relative.w-100 .form-control:focus {
-    border-color: #0072CE !important;
-    box-shadow: 0 0 0 0.15rem rgba(0,114,206,0.15) !important;
-}
+    .position-relative.w-100 input[type="text"]:focus, .position-relative.w-100 input[type="search"]:focus, .position-relative.w-100 .form-control:focus {
+        border-color: #0072CE !important;
+        box-shadow: 0 0 0 0.15rem rgba(0,114,206,0.15) !important;
+    }
 
 /* Border cam cho input tìm kiếm */
 .position-relative.w-100 input[type="text"], .position-relative.w-100 input[type="search"], .position-relative.w-100 .form-control {
@@ -489,21 +510,303 @@ input[type="text"]::placeholder, input[type="search"]::placeholder, .form-contro
     border: 1.5px solid #0072CE !important;
 }
 
-/* Button tìm kiếm: hover nền trắng, chữ xanh, viền xanh */
-.position-relative.w-100 button[type="submit"]:hover {
-    background-color: #fff !important;
-    color: #0072CE !important;
-    border: 1.5px solid #0072CE !important;
-}
+    /* Button tìm kiếm: hover nền trắng, chữ xanh, viền xanh */
+    .position-relative.w-100 button[type="submit"]:hover {
+        background-color: #fff !important;
+        color: #0072CE !important;
+        border: 1.5px solid #0072CE !important;
+    }
 
 /* Dropdown menu: hover nền xanh, chữ trắng cho mọi thành phần bên trong */
 .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item.active {
     background-color: #0072CE !important;
     color: #fff !important;
 }
-.dropdown-menu .dropdown-item:hover *,
-.dropdown-menu .dropdown-item:focus *,
-.dropdown-menu .dropdown-item.active * {
+
+    .dropdown-menu .dropdown-item:hover *,
+    .dropdown-menu .dropdown-item:focus *,
+    .dropdown-menu .dropdown-item.active * {
+        color: #fff !important;
+        fill: #fff !important;
+    }
+
+/* --- Search button hover/focus/active: background xanh, icon trắng --- */
+/*.btn-search,
+.btn-search:focus,
+.btn-search:active {
+    background: #fff !important;
+    color: #212529 !important;
+    border-color: #0072CE !important;
+    transition: background 0.2s;
+}
+
+    .btn-search:hover,
+    .btn-search:focus-visible {
+        background: #0072CE !important;
+        color: #fff !important;
+        border-color: #0072CE !important;
+    }
+
+        .btn-search:hover i,
+        .btn-search:focus-visible i {
+            color: #fff !important;
+        }*/
+
+/* --- Đảm bảo nút tìm kiếm trên navbar hover/focus/active luôn nền xanh, chữ trắng, icon trắng --- */
+.navbar .btn-search:hover,
+.navbar .btn-search:focus,
+.navbar .btn-search:active {
+    background: #0072CE !important;
     color: #fff !important;
-    fill: #fff !important;
-} 
+    border-color: #0072CE !important;
+}
+
+    .navbar .btn-search:hover i,
+    .navbar .btn-search:focus i,
+    .navbar .btn-search:active i {
+        color: #fff !important;
+    }
+
+/* --- GỘP TỪ style.css: Spinner, Button, Topbar, Navbar, Hero, Carousel, Page-header, featurs, fruite, vesitable, banner, counter, testimonial, pagination, footer, box sản phẩm... --- */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+    #spinner.show {
+        transition: opacity .8s ease-out, visibility 0s linear .0s;
+        visibility: visible;
+        opacity: 1;
+    }
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.border-secondary {
+    transition: 0.5s;
+}
+
+    .btn.border-secondary:hover {
+        background: var(--bs-secondary) !important;
+        color: var(--bs-white) !important;
+    }
+
+.fixed-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+    border: 0;
+}
+
+.topbar {
+    padding: 20px;
+    border-radius: 230px 100px;
+}
+
+    .topbar .top-info, .topbar .top-link {
+        font-size: 15px;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+
+        .topbar .top-link a {
+            letter-spacing: 1px;
+        }
+
+            .topbar .top-link a small:hover {
+                color: var(--bs-secondary) !important;
+                transition: 0.5s;
+            }
+
+                .topbar .top-link a small:hover i {
+                    color: var(--bs-primary) !important;
+                }
+
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar {
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+    .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active, .fixed-top.bg-white .navbar .navbar-nav .nav-link:hover, .fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
+        color: var(--bs-primary);
+    }
+
+    .navbar .dropdown-toggle::after {
+        border: none;
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        vertical-align: middle;
+        margin-left: 8px;
+    }
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover, .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item.active {
+    background: #0072CE !important;
+    color: #fff !important;
+}
+
+    .dropdown .dropdown-menu a:hover *, .dropdown-menu .dropdown-item:hover *, .dropdown-menu .dropdown-item:focus *, .dropdown-menu .dropdown-item.active * {
+        color: #fff !important;
+        fill: #fff !important;
+    }
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+
+.hero-header {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/hero-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+    .carousel-item a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        background: linear-gradient(rgba(255, 181, 36, 0.7), rgba(255, 181, 36, 0.7));
+    }
+
+.carousel-control-next, .carousel-control-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid var(--bs-white);
+    background: var(--bs-primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    margin-right: 20px;
+}
+
+.carousel-control-prev {
+    margin-left: 20px;
+}
+
+.page-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cart-page-header-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 992px) {
+    .hero-header, .page-header {
+        margin-top: 152px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-header, .page-header {
+        margin-top: 97px !important;
+    }
+}
+
+/* --- GỘP TỪ site.css: font-size, focus, margin-bottom... --- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #0dcaf0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}

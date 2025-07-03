@@ -45,6 +45,56 @@
 
     var paging = GetPaging(currentPage, totalPages);
 }
+<!-- Hero Start -->
+<div class="container-fluid py-3 mb-3 hero-header">
+    <div class="container py-3">
+        <div class="row g-5 align-items-center">
+            <div class="col-md-12 col-lg-4 order-2 order-lg-1 d-flex flex-column align-items-start justify-content-center" style="height: 310px; min-height: 310px;">
+                <div class="d-flex flex-column justify-content-center h-100 w-100">
+                    <h4 class="mb-2 text-primary" style="font-size: 1.5rem;">Dịch vụ viễn thông VNPT</h4>
+                    <h1 class="mb-4 display-5 text-primary" style="font-size: 2.5rem; font-weight: bold;">Đăng ký các gói cước mới nhất</h1>
+                    <!-- Search bar start -->
+                    <form asp-action="Index" asp-controller="Shop" method="get" class="w-100 mt-2">
+                        <div class="input-group">
+                            <input type="search" name="SearchString" class="form-control p-3" placeholder="Tìm kiếm gói cước..." aria-label="Tìm kiếm gói cước">
+                            <button class="btn btn-primary px-4" type="submit">Tìm kiếm</button>
+                        </div>
+                    </form>
+                    <!-- Search bar end -->
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-8 order-1 order-lg-2 d-flex align-items-center">
+                <div class="w-100 d-flex justify-content-center">
+                    <div id="posterCarousel" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="2000" style="height: 310px;">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="~/img/poster1.jpg" class="img-fluid rounded d-block mx-auto" alt="Poster 1" style="height: 310px; width: 100%; object-fit: cover; background: #f8f9fa;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/poster2.jpg" class="img-fluid rounded d-block mx-auto" alt="Poster 2" style="height: 310px; width: 100%; object-fit: cover; background: #f8f9fa;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/poster3.jpg" class="img-fluid rounded d-block mx-auto" alt="Poster 3" style="height: 310px; width: 100%; object-fit: cover; background: #f8f9fa;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/poster4.jpg" class="img-fluid rounded d-block mx-auto" alt="Poster 4" style="height: 310px; width: 100%; object-fit: cover; background: #f8f9fa;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#posterCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#posterCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
 <!-- Featurs Section -->
 <div class="container-fluid featurs py-5">
     <div class="container py-5">
@@ -122,7 +172,13 @@
                     <div class="p-4 rounded-bottom d-flex flex-column flex-grow-1 align-items-center text-center">
                         <h4 class="mb-2 text-primary w-100">@goi.TenGoi</h4>
                         <div class="goicuoc-desc mb-3 text-dark w-100">@goi.NoiDung</div>
-                        <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (goi.GiaCuocs.Any()) { @(goi.GiaCuocs.First().Gia + " VNĐ") } else { <span>Liên hệ</span> }</p>
+                        <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (goi.GiaCuocs.Any()) {
+                        @(goi.GiaCuocs.First().Gia + " VNĐ")
+                    } else
+                    {
+                        <span>Liên hệ</span>
+                    }
+                        </p>
                         <div class="d-flex justify-content-center gap-2 w-100">
                             <a href="@Url.Action("Detail", "Shop", new { id = goi.Id })" class="btn border border-info rounded-pill px-3 text-info">Chi tiết</a>
                             <a href="#" class="btn border border-primary rounded-pill px-3 text-primary">Đăng ký</a>
@@ -203,7 +259,13 @@
                     <div class="p-4 rounded-bottom d-flex flex-column flex-grow-1 align-items-center text-center">
                         <h4 class="mb-2 text-primary w-100">@goi.TenGoi</h4>
                         <div class="goicuoc-desc mb-3 text-dark w-100">@goi.NoiDung</div>
-                        <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (goi.GiaCuocs.Any()) { @(goi.GiaCuocs.First().Gia + " VNĐ") } else { <span>Liên hệ</span> }</p>
+                        <p class="text-dark fs-5 fw-bold mb-3 w-100">@if (goi.GiaCuocs.Any()) {
+                        @(goi.GiaCuocs.First().Gia + " VNĐ")
+                    } else
+                    {
+                        <span>Liên hệ</span>
+                    }
+                        </p>
                         <div class="d-flex justify-content-center gap-2 w-100">
                             <a href="@Url.Action("Detail", "Shop", new { id = goi.Id })" class="btn border border-info rounded-pill px-3 text-info">Chi tiết</a>
                             <a href="#" class="btn border border-primary rounded-pill px-3 text-primary">Đăng ký</a>

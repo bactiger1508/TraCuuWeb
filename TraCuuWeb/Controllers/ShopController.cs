@@ -20,7 +20,14 @@ namespace TraCuuWeb.Controllers
         {
             ViewData["CurrentSort"] = sortOrder;
             ViewData["PriceSortParm"] = string.IsNullOrEmpty(sortOrder) ? "price_desc" : "";
-            ViewData["CurrentFilter"] = searchString;
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                ViewData["CurrentFilter"] = searchString;
+            }
+            else
+            {
+                ViewData["CurrentFilter"] = "";
+            }
             ViewData["SelectedNhomLon"] = selectedNhomLon;
             ViewData["SelectedDiDongIds"] = diDongIds;
             ViewData["SelectedBangRongIds"] = bangRongIds;
@@ -161,6 +168,46 @@ namespace TraCuuWeb.Controllers
                 .Include(g => g.IdNhomDiDongNavigation).ThenInclude(n => n.IdNhomLonNavigation)
                 .FirstOrDefault(g => g.Id == id);
             if (goi == null) return NotFound();
+
+            // Lấy 3 sản phẩm bán chạy nhất dựa vào lịch sử đăng ký
+            var bestSellerIds = _context.LichSuDangKies
+                .GroupBy(l => l.IdGoiCuoc)
+                .Select(g => new { IdGoiCuoc = g.Key, Count = g.Count() })
+                .OrderByDescending(g => g.Count)
+                .Take(3)
+                .Select(g => g.IdGoiCuoc)
+                .ToList();
+            var bestSellers = _context.GoiCuocs
+                .Include(g => g.GiaCuocs)
+                .Where(g => bestSellerIds.Contains(g.Id))
+                .ToList();
+            ViewBag.BestSellers = bestSellers;
+
+            // Lấy 8 gói cước liên quan cùng nhóm lớn, random, khác gói hiện tại
+            int? nhomLonId = null;
+            if (goi.IdNhomDiDongNavigation?.IdNhomLonNavigation != null)
+                nhomLonId = goi.IdNhomDiDongNavigation.IdNhomLonNavigation.Id;
+            else if (goi.IdNhomBangRongNavigation?.IdNhomLonNavigation != null)
+                nhomLonId = goi.IdNhomBangRongNavigation.IdNhomLonNavigation.Id;
+            if (nhomLonId != null)
+            {
+                var related = _context.GoiCuocs
+                    .Include(g => g.GiaCuocs)
+                    .Include(g => g.IdNhomBangRongNavigation).ThenInclude(n => n.IdNhomLonNavigation)
+                    .Include(g => g.IdNhomDiDongNavigation).ThenInclude(n => n.IdNhomLonNavigation)
+                    .Where(g => g.Id != goi.Id &&
+                        ((g.IdNhomDiDongNavigation != null && g.IdNhomDiDongNavigation.IdNhomLon == nhomLonId) ||
+                         (g.IdNhomBangRongNavigation != null && g.IdNhomBangRongNavigation.IdNhomLon == nhomLonId)))
+                    .ToList();
+                var rnd = new Random();
+                var relatedRandom = related.OrderBy(x => rnd.Next()).Take(8).ToList();
+                ViewBag.RelatedPackages = relatedRandom;
+            }
+            else
+            {
+                ViewBag.RelatedPackages = new List<TraCuuWeb.Data.GoiCuoc>();
+            }
+
             return View(goi);
         }
     }

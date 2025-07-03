@@ -3,9 +3,6 @@ wwwroot\cart.html
 wwwroot\chackout.html
 wwwroot\contact.html
 wwwroot\css\bootstrap.min.css
-wwwroot\css\custom.css
-wwwroot\css\site.css
-wwwroot\css\style.css
 wwwroot\favicon.ico
 wwwroot\img\avatar.jpg
 wwwroot\img\baner-1.png
@@ -45,7 +42,6 @@ wwwroot\img\vegetable-item-5.jpg
 wwwroot\img\vegetable-item-6.jpg
 wwwroot\index.html
 wwwroot\js\main.js
-wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -209,3 +205,4 @@ wwwroot\scss\bootstrap\scss\_variables.scss
 wwwroot\shop-detail.html
 wwwroot\shop.html
 wwwroot\testimonial.html
+wwwroot\css\custom.css
