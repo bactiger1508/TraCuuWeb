@@ -80,11 +80,10 @@
                     </div>
                 </div>
                 <div class="col-xl-6 d-flex align-items-center">
-                    <span class="fw-semibold text-primary ms-3">Đã tìm thấy @Model.Count() sản phẩm</span>
+                    <span class="fw-semibold text-dark ms-3">Đã tìm thấy @Model.Count() sản phẩm</span>
                 </div>
                 <div class="col-xl-3 d-flex align-items-center justify-content-end">
-                    <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between" style="min-width:220px;">
-                        <label for="fruits" class="me-2">Sắp xếp:</label>
+                    <div class="bg-light ps-3 py-1 rounded d-flex justify-content-between" style="min-width:150px;">
                         <select id="fruits" name="sortOrder" class="border-0 form-select-sm bg-light me-3" onchange="this.form.submit();">
                             @{
                                 var currentSort = ViewData["CurrentSort"]?.ToString() ?? "";

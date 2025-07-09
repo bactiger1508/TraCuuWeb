@@ -1,0 +1,275 @@
+@model IEnumerable<TraCuuWeb.Data.GoiCuoc>
+@using TraCuuWeb.Data
+@{
+    ViewData["Title"] = "Quản lý gói cước";
+    var nhomLonsWithChildren = ViewBag.NhomLonsWithChildren as List<NhomLon>;
+    var selectedNhomLon = ViewData["SelectedNhomLon"] as int?;
+    var selectedDiDongIds = ViewData["SelectedDiDongIds"] as List<int> ?? new List<int>();
+    var selectedBangRongIds = ViewData["SelectedBangRongIds"] as List<int> ?? new List<int>();
+    var minPrice = ViewData["MinPrice"];
+    var maxPrice = ViewData["MaxPrice"];
+    int currentPage = ViewBag.CurrentPage ?? 1;
+    int totalPages = ViewBag.TotalPages ?? 1;
+    string searchTypeVal = ViewData["SearchType"]?.ToString() ?? "TenGoi";
+    string currentFilter = ViewData["CurrentFilter"]?.ToString() ?? "";
+    List<int?> GetPaging(int current, int total)
+    {
+        var pages = new List<int?>();
+        if (total <= 5)
+        {
+            for (int i = 1; i <= total; i++) pages.Add(i);
+        }
+        else
+        {
+            pages.Add(1);
+            if (current > 3) pages.Add(null);
+            for (int i = Math.Max(2, current - 1); i <= Math.Min(total - 1, current + 1); i++)
+            {
+                pages.Add(i);
+            }
+            if (current < total - 2) pages.Add(null);
+            pages.Add(total);
+        }
+        return pages;
+    }
+    var paging = GetPaging(currentPage, totalPages);
+}
+<div class="container-fluid py-5">
+    <div class="container">
+        <h1 class="mb-4">Quản lý gói cước</h1>
+        <form asp-action="Index" method="get" id="admin-filter-form">
+            <div class="row g-4">
+                <div class="col-xl-3">
+                    <div class="mb-3">
+                        <h4>Danh mục</h4>
+                        <div class="mb-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="selectedNhomLon" id="nhomlon-0" value="0" data-target="sub-cat-0" @(selectedNhomLon == null || selectedNhomLon == 0 ? "checked" : "")>
+                                <label class="form-check-label d-flex justify-content-between align-items-center" for="nhomlon-0">Tất cả</label>
+                            </div>
+                        </div>
+                        @if (nhomLonsWithChildren != null)
+                        {
+                            foreach (var nhom in nhomLonsWithChildren)
+                            {
+                                var hasSubcategories = nhom.NhomGoiCuocDiDongs.Any() || nhom.NhomGoiCuocBangRongs.Any();
+                                <div class="mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="selectedNhomLon" id="nhomlon-@nhom.Id" value="@nhom.Id" data-target="sub-cat-@nhom.Id" @(selectedNhomLon == nhom.Id ? "checked" : "")>
+                                        <label class="form-check-label d-flex justify-content-between align-items-center" for="nhomlon-@nhom.Id">@nhom.TenNhomLon</label>
+                                    </div>
+                                    @if (hasSubcategories)
+                                    {
+                                        <div id="sub-cat-@nhom.Id" class="sub-category-container" style="padding-left: 25px; @(selectedNhomLon == nhom.Id ? "" : "display: none;")">
+                                            @foreach (var subCat in nhom.NhomGoiCuocDiDongs)
+                                            {
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="diDongIds" value="@subCat.Id" id="dd-@subCat.Id" @(selectedDiDongIds.Contains(subCat.Id) ? "checked" : "")>
+                                                    <label class="form-check-label d-flex justify-content-between align-items-center" for="dd-@subCat.Id">@subCat.TenNhom</label>
+                                                </div>
+                                            }
+                                            @foreach (var subCat in nhom.NhomGoiCuocBangRongs)
+                                            {
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="bangRongIds" value="@subCat.Id" id="br-@subCat.Id" @(selectedBangRongIds.Contains(subCat.Id) ? "checked" : "")>
+                                                    <label class="form-check-label d-flex justify-content-between align-items-center" for="br-@subCat.Id">@subCat.TenNhom</label>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        }
+                    </div>
+                    <div class="mb-3">
+                        <h4 class="mb-2">Lọc theo giá</h4>
+                        <div class="d-flex align-items-center">
+                            <input type="number" name="minPrice" class="form-control" placeholder="Từ" value="@minPrice">
+                            <span class="mx-2">-</span>
+                            <input type="number" name="maxPrice" class="form-control" placeholder="Đến" value="@maxPrice">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mb-1">Áp dụng</button>
+                    <div class="text-center mt-1">
+                        <a href="#" class="text-secondary small fw-semibold" style="color:#6c757d !important;" onclick="resetFilters();return false;">Xóa lọc</a>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <div class="d-flex mb-3 align-items-center" style="gap: 8px;">
+                        <select name="searchType" class="form-select form-select-sm" style="max-width: 130px; min-width: 110px; height: 40px; border-radius: 0.5rem;">
+                            @if (searchTypeVal == "TenGoi")
+                            {
+                                <option value="TenGoi" selected>Tên gói</option>
+                            }
+                            else
+                            {
+                                <option value="TenGoi">Tên gói</option>
+                            }
+                            @if (searchTypeVal == "TenDichVu")
+                            {
+                                <option value="TenDichVu" selected>Tên dịch vụ</option>
+                            }
+                            else
+                            {
+                                <option value="TenDichVu">Tên dịch vụ</option>
+                            }
+                            @if (searchTypeVal == "NoiDung")
+                            {
+                                <option value="NoiDung" selected>Nội dung</option>
+                            }
+                            else
+                            {
+                                <option value="NoiDung">Nội dung</option>
+                            }
+                        </select>
+                        <input type="search" name="searchString" class="form-control p-3" placeholder="Tìm kiếm..." value="@currentFilter" style="height: 40px; border-radius: 0.5rem;">
+                        <button type="submit" class="btn btn-primary" style="height: 40px; min-width: 120px; border-radius: 0.5rem; padding: 0 18px; display: flex; align-items: center; justify-content: center;">Tìm kiếm</button>
+                    </div>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th style="width: 60px;">ID</th>
+                                            <th style="width: 200px;">Tên gói cước</th>
+                                            <th>Mô tả</th>
+                                            <th style="width: 120px;">Giá</th>
+                                            <th style="width: 180px;">Thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>@item.Id</td>
+                                                <td><strong>@item.TenGoi</strong></td>
+                                                <td>
+                                                    @if (!string.IsNullOrEmpty(item.NoiDung))
+                                                    {
+                                                        <span>@(item.NoiDung.Length > 50 ? item.NoiDung.Substring(0, 50) + "..." : item.NoiDung)</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">Không có mô tả</span>
+                                                    }
+                                                </td>
+                                                <td>
+                                                    @if (item.GiaCuocs != null && item.GiaCuocs.Any())
+                                                    {
+                                                        var giaCuoc = item.GiaCuocs.FirstOrDefault();
+                                                        if (giaCuoc != null)
+                                                        {
+                                                            <span class="text-primary fw-bold">@giaCuoc.Gia VNĐ</span>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">Chưa có giá</span>
+                                                    }
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group" role="group">
+                                                        <a href="@Url.Action("Edit", "Admin", new { id = item.Id })" 
+                                                           class="btn btn-sm btn-outline-primary" 
+                                                           title="Chỉnh sửa"
+                                                           style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <a href="@Url.Action("Create", "Admin")" class="btn btn-sm btn-success" title="Thêm mới gói cước" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;">
+                                                            <i class="fas fa-plus"></i>
+                                                        </a>
+                                                        <a href="@Url.Action("Delete", "Admin", new { id = item.Id })" 
+                                                           class="btn btn-sm btn-outline-danger" 
+                                                           title="Xóa"
+                                                           onclick="return confirm('Bạn có chắc chắn muốn xóa gói cước này?')"
+                                                           style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center mb-0">
+                                        @if (currentPage > 1)
+                                        {
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" onclick="changePage(1); return false;">&laquo;&laquo;</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" onclick="changePage(@currentPage - 1); return false;">&laquo;</a>
+                                            </li>
+                                        }
+                                        @foreach (var p in paging)
+                                        {
+                                            if (p == null)
+                                            {
+                                                <li class="page-item disabled"><span class="page-link">...</span></li>
+                                            }
+                                            else if (p == currentPage)
+                                            {
+                                                <li class="page-item active"><span class="page-link">@p</span></li>
+                                            }
+                                            else
+                                            {
+                                                <li class="page-item">
+                                                    <a class="page-link" href="@Url.Action("Index", new { page = p, searchType = searchTypeVal, searchString = currentFilter, selectedNhomLon = selectedNhomLon, diDongIds = selectedDiDongIds, bangRongIds = selectedBangRongIds, minPrice = minPrice, maxPrice = maxPrice })">@p</a>
+                                                </li>
+                                            }
+                                        }
+                                        @if (currentPage < totalPages)
+                                        {
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" onclick="changePage(@currentPage + 1); return false;">&raquo;</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" onclick="changePage(@totalPages); return false;">&raquo;&raquo;</a>
+                                            </li>
+                                        }
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        function resetFilters() {
+            document.querySelectorAll('#admin-filter-form input[type=checkbox], #admin-filter-form input[type=radio]').forEach(e => e.checked = false);
+            document.querySelectorAll('#admin-filter-form input[type=number], #admin-filter-form input[type=search]').forEach(e => e.value = '');
+            document.querySelector('#admin-filter-form').submit();
+        }
+
+        // Hiện checkbox khi click radio button
+        document.addEventListener('DOMContentLoaded', function() {
+            const radioButtons = document.querySelectorAll('input[type="radio"][name="selectedNhomLon"]');
+            
+            radioButtons.forEach(function(radio) {
+                radio.addEventListener('change', function() {
+                    // Ẩn tất cả sub-category containers
+                    document.querySelectorAll('.sub-category-container').forEach(function(container) {
+                        container.style.display = 'none';
+                    });
+                    
+                    // Hiện container tương ứng với radio được chọn
+                    if (this.checked) {
+                        const targetId = this.getAttribute('data-target');
+                        const targetContainer = document.getElementById(targetId);
+                        if (targetContainer) {
+                            targetContainer.style.display = 'block';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+} 

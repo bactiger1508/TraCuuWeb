@@ -3,24 +3,83 @@
   "WorkspaceRootPath": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\shop-detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\shop-detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\data\\tracuugoicuoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\data\\tracuugoicuoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\tracuuweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\tracuuweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\chackout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\chackout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bacb4\\Downloads\\galaxy-main\\galaxy-main\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\shop\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\shop\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\testimonial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\testimonial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\shop-detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\shop-detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -31,32 +90,12 @@
       "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\wwwroot\\testimonial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\wwwroot\\testimonial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\tracuuweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\tracuuweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|c:\\code c#\\goicuocweb\\tracuuweb\\tracuuweb\\data\\tracuugoicuoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C060EF5F-1B3B-4171-B2C1-499722BC9D73}|TraCuuWeb\\TraCuuWeb.csproj|solutionrelative:tracuuweb\\data\\tracuugoicuoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +105,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +113,140 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\Admin\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T02:19:01.167Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwIQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T01:32:22.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Admin\\Delete.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Delete.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\Admin\\Delete.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAMwHIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T01:24:23.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Create.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Admin\\Create.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\Admin\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T01:24:07.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\bacb4\\Downloads\\galaxy-main\\galaxy-main\\script.js",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\bacb4\\Downloads\\galaxy-main\\galaxy-main\\script.js",
+              "ToolTip": "C:\\Users\\bacb4\\Downloads\\galaxy-main\\galaxy-main\\script.js",
+              "RelativeToolTip": "..\\..\\..\\Users\\bacb4\\Downloads\\galaxy-main\\galaxy-main\\script.js",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-08T01:02:35.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "chackout.html",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\chackout.html",
+              "RelativeDocumentMoniker": "TraCuuWeb\\wwwroot\\chackout.html",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\chackout.html",
+              "RelativeToolTip": "TraCuuWeb\\wwwroot\\chackout.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-07T07:48:51.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "contact.html",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\contact.html",
+              "RelativeDocumentMoniker": "TraCuuWeb\\wwwroot\\contact.html",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\contact.html",
+              "RelativeToolTip": "TraCuuWeb\\wwwroot\\contact.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-07T07:48:50.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "cart.html",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\cart.html",
+              "RelativeDocumentMoniker": "TraCuuWeb\\wwwroot\\cart.html",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\cart.html",
+              "RelativeToolTip": "TraCuuWeb\\wwwroot\\cart.html",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-07T03:47:17.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "TraCuuWeb\\wwwroot\\index.html",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\index.html",
+              "RelativeToolTip": "TraCuuWeb\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-07T03:47:15.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shop\\Detail.cshtml",
+              "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Shop\\Detail.cshtml",
+              "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shop\\Detail.cshtml",
+              "RelativeToolTip": "TraCuuWeb\\Views\\Shop\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-07T02:48:13.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "custom.css",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\css\\custom.css",
               "RelativeDocumentMoniker": "TraCuuWeb\\wwwroot\\css\\custom.css",
               "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\css\\custom.css",
               "RelativeToolTip": "TraCuuWeb\\wwwroot\\css\\custom.css",
-              "ViewState": "AgIAABMCAAAAAAAAAAAAABsCAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAIMBAAAAAAAAAADwv8YBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-03T08:42:18.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T08:42:18.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "shop-detail.html",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\shop-detail.html",
               "RelativeDocumentMoniker": "TraCuuWeb\\wwwroot\\shop-detail.html",
@@ -95,36 +254,36 @@
               "RelativeToolTip": "TraCuuWeb\\wwwroot\\shop-detail.html",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAGECAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-06-23T02:01:51.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T02:01:51.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "testimonial.html",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\testimonial.html",
               "RelativeDocumentMoniker": "TraCuuWeb\\wwwroot\\testimonial.html",
               "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\wwwroot\\testimonial.html",
               "RelativeToolTip": "TraCuuWeb\\wwwroot\\testimonial.html",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-06-23T02:01:48.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shop\\Index.cshtml",
               "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Shop\\Index.cshtml",
               "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shop\\Index.cshtml",
               "RelativeToolTip": "TraCuuWeb\\Views\\Shop\\Index.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAMwGEAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAANsAAAAAAAAAAAAAAOwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-20T04:24:08.892Z"
+              "WhenOpened": "2025-06-20T04:24:08.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "ShopController.cs",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Controllers\\ShopController.cs",
               "RelativeDocumentMoniker": "TraCuuWeb\\Controllers\\ShopController.cs",
@@ -136,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "TraCuuWeb\\Controllers\\HomeController.cs",
@@ -148,31 +307,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "TraCuuWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-18T03:24:40.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "TraCuuWeb\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "TraCuuWeb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEAAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAEAAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-18T03:24:23.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "TraCuuWeb\\Views\\_ViewImports.cshtml",
@@ -184,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "TraCuuWeb\\Views\\_ViewStart.cshtml",
@@ -196,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Program.cs",
               "RelativeDocumentMoniker": "TraCuuWeb\\Program.cs",
@@ -208,19 +367,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "TraCuuGoiCuocContext.cs",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
               "RelativeDocumentMoniker": "TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
               "ToolTip": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
               "RelativeToolTip": "TraCuuWeb\\Data\\TraCuuGoiCuocContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA9wCoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAUwCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T02:48:39.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\appsettings.json",
               "RelativeDocumentMoniker": "TraCuuWeb\\appsettings.json",
@@ -232,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "TraCuuWeb.csproj",
               "DocumentMoniker": "C:\\Code C#\\GoiCuocWeb\\TraCuuWeb\\TraCuuWeb\\TraCuuWeb.csproj",
               "RelativeDocumentMoniker": "TraCuuWeb\\TraCuuWeb.csproj",

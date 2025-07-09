@@ -1,0 +1,124 @@
+@model TraCuuWeb.Data.GoiCuoc
+
+@{
+    ViewData["Title"] = "Thêm gói cước mới";
+}
+
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-12">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1 class="display-5 text-primary mb-0">Thêm gói cước mới</h1>
+                    <a href="@Url.Action("Index", "Admin")" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Quay lại
+                    </a>
+                </div>
+
+                <div class="card shadow">
+                    <div class="card-body">
+                        <form asp-action="Create" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="TenGoi" class="form-label fw-bold">Tên gói cước <span class="text-danger">*</span></label>
+                                        <input asp-for="TenGoi" class="form-control" placeholder="Nhập tên gói cước" required />
+                                        <span asp-validation-for="TenGoi" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="NoiDung" class="form-label fw-bold">Nội dung <span class="text-danger">*</span></label>
+                                        <input asp-for="NoiDung" class="form-control" placeholder="Nhập nội dung gói cước" required />
+                                        <span asp-validation-for="NoiDung" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="QuyDinh" class="form-label fw-bold">Quy định</label>
+                                <textarea asp-for="QuyDinh" class="form-control" rows="3" placeholder="Nhập quy định gói cước"></textarea>
+                                <span asp-validation-for="QuyDinh" class="text-danger"></span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="IdNhomBangRong" class="form-label fw-bold">Nhóm băng rộng</label>
+                                        <select asp-for="IdNhomBangRong" class="form-select">
+                                            <option value="">-- Chọn nhóm băng rộng --</option>
+                                            @if (ViewBag.NhomBangRongs != null)
+                                            {
+                                                foreach (var nhom in ViewBag.NhomBangRongs)
+                                                {
+                                                    <option value="@nhom.Id">@nhom.TenNhom</option>
+                                                }
+                                            }
+                                        </select>
+                                        <span asp-validation-for="IdNhomBangRong" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="IdNhomDiDong" class="form-label fw-bold">Nhóm di động</label>
+                                        <select asp-for="IdNhomDiDong" class="form-select">
+                                            <option value="">-- Chọn nhóm di động --</option>
+                                            @if (ViewBag.NhomDiDongs != null)
+                                            {
+                                                foreach (var nhom in ViewBag.NhomDiDongs)
+                                                {
+                                                    <option value="@nhom.Id">@nhom.TenNhom</option>
+                                                }
+                                            }
+                                        </select>
+                                        <span asp-validation-for="IdNhomDiDong" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="DoiTuong" class="form-label fw-bold">Đối tượng</label>
+                                        <input asp-for="DoiTuong" class="form-control" placeholder="Nhập đối tượng" />
+                                        <span asp-validation-for="DoiTuong" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="DichVuBundle" class="form-label fw-bold">Dịch vụ Bundle</label>
+                                        <input asp-for="DichVuBundle" class="form-control" placeholder="Nhập dịch vụ bundle" />
+                                        <span asp-validation-for="DichVuBundle" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-end gap-2">
+                                <a href="@Url.Action("Index", "Admin")" class="btn btn-secondary">
+                                    <i class="fas fa-times me-2"></i>Hủy
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save me-2"></i>Lưu gói cước
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        // Auto focus on first input
+        $(document).ready(function() {
+            $('#TenGoi').focus();
+        });
+    </script>
+} 

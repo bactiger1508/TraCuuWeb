@@ -1,3 +1,0 @@
-C:\Code C#\GoiCuocWeb\TraCuuWeb\TraCuuWeb\wwwroot\css\site.css
-C:\Code C#\GoiCuocWeb\TraCuuWeb\TraCuuWeb\wwwroot\css\style.css
-C:\Code C#\GoiCuocWeb\TraCuuWeb\TraCuuWeb\wwwroot\js\site.js

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TraCuuWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+736d8af18d0b109c83df36b7cc8e3bccb098d43f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3bfee54bc8a1f4a3be9d8e07ddd06d633f5aff2")]
 [assembly: System.Reflection.AssemblyProductAttribute("TraCuuWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TraCuuWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

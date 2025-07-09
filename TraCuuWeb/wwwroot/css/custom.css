@@ -135,7 +135,7 @@ a {
 /* Focus states */
 .form-control:focus,
 .form-select:focus {
-    border-color: #0072CE !important;
+    border-color: #ced4da !important;
     box-shadow: 0 0 0 0.25rem rgba(0, 102, 179, 0.25) !important;
 }
 
@@ -265,7 +265,7 @@ a {
     .goicuoc-equal-box .position-absolute,
     .fruite-item .position-absolute {
         background: #fff !important;
-        color: #0072CE !important;
+        color: #000000 !important;
         border: 1.5px solid #0072CE !important;
         font-weight: bold;
     }
@@ -481,7 +481,7 @@ footer, .footer, .footer * {
 
 /* Border và chữ input tìm kiếm: xanh VNPT */
 input[type="text"], input[type="search"], .form-control {
-    border-color: #0072CE !important;
+    border-color: #ced4da !important;
     color: #212529 !important;
 }
 
@@ -529,28 +529,6 @@ input[type="text"], input[type="search"], .form-control {
         color: #fff !important;
         fill: #fff !important;
     }
-
-/* --- Search button hover/focus/active: background xanh, icon trắng --- */
-/*.btn-search,
-.btn-search:focus,
-.btn-search:active {
-    background: #fff !important;
-    color: #212529 !important;
-    border-color: #0072CE !important;
-    transition: background 0.2s;
-}
-
-    .btn-search:hover,
-    .btn-search:focus-visible {
-        background: #0072CE !important;
-        color: #fff !important;
-        border-color: #0072CE !important;
-    }
-
-        .btn-search:hover i,
-        .btn-search:focus-visible i {
-            color: #fff !important;
-        }*/
 
 /* --- Đảm bảo nút tìm kiếm trên navbar hover/focus/active luôn nền xanh, chữ trắng, icon trắng --- */
 .navbar .btn-search:hover,

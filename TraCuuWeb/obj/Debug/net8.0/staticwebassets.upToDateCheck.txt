@@ -3,6 +3,7 @@ wwwroot\cart.html
 wwwroot\chackout.html
 wwwroot\contact.html
 wwwroot\css\bootstrap.min.css
+wwwroot\css\custom.css
 wwwroot\favicon.ico
 wwwroot\img\avatar.jpg
 wwwroot\img\baner-1.png
@@ -205,4 +206,3 @@ wwwroot\scss\bootstrap\scss\_variables.scss
 wwwroot\shop-detail.html
 wwwroot\shop.html
 wwwroot\testimonial.html
-wwwroot\css\custom.css
